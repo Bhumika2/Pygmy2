@@ -1,0 +1,1349 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------------< [0;36mfrontend:frontend[0;1m >--------------------------[m
+[[1;34mINFO[m] [1mBuilding frontend 1.0.1[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mninja-maven-plugin:6.8.1:run[m [1m(default-cli)[m @ [36mfrontend[0;1m ---[m
+[[1;34mINFO[m] ------------------------------------------------------------------------
+[[1;34mINFO[m] Ninja will watch dirs:
+[[1;34mINFO[m]  /Users/bhumika/Desktop/Spring_2021_Courses/677_Distributed_and_Operating_Systems/Projects/Pygmy/frontend/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Ninja will launch with:
+[[1;34mINFO[m]       context: <default>
+[[1;34mINFO[m]          mode: dev
+[[1;34mINFO[m]          port: <default>
+[[1;34mINFO[m]      ssl port: <default>
+[[1;34mINFO[m]     mainClass: ninja.standalone.AutoStandalone
+[[1;34mINFO[m] extra jvmArgs: -Dninja.external.configuration=conf/hostname.conf
+[[1;34mINFO[m] ------------------------------------------------------------------------
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/Users/bhumika/.m2/repository/com/google/inject/guice/4.2.3/guice-4.2.3.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+rvlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@70efb718{STARTED}
+16:29:28.259 [NinjaJetty] INFO  ninja.Bootstrap - Successfully configured Logback.
+16:29:28.259 [NinjaJetty] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+16:29:28.515 [NinjaJetty] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+16:29:28.515 [NinjaJetty] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+16:29:28.542 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:29:28.543 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+16:29:28.543 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:29:28.543 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+16:29:28.543 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+16:29:28.543 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+16:29:28.543 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+16:29:28.543 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+16:29:28.548 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:29:28.548 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+16:29:28.548 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:29:28.548 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+16:29:28.548 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+16:29:28.548 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+16:29:28.548 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+16:29:28.548 [NinjaJetty] INFO  ninja.Bootstrap - Ninja injector started in 289 ms.
+16:29:28.554 [NinjaJetty] WARN  ninja.params.ControllerMethodInvoker - Using deprecated non-strict mode for injection of parameters into controller (ninja.strict_argument_extractors = false). This mode will soon be removed from Ninja. Make sure you upgrade your application as soon as possible. More: https://www.ninjaframework.org/documentation/basic_concepts/controllers.html 'A note about null and Optional'.
+16:29:28.555 [NinjaJetty] INFO  ninja.RouterImpl - ----------------------------------------------------------------
+16:29:28.555 [NinjaJetty] INFO  ninja.RouterImpl - Registered routes
+16:29:28.555 [NinjaJetty] INFO  ninja.RouterImpl - ----------------------------------------------------------------
+16:29:28.555 [NinjaJetty] INFO  ninja.RouterImpl - GET  /search/{topic}       =>  controllers.ApplicationController::search
+16:29:28.555 [NinjaJetty] INFO  ninja.RouterImpl - GET  /lookup/{bookNumber}  =>  controllers.ApplicationController::lookup
+16:29:28.555 [NinjaJetty] INFO  ninja.RouterImpl - POST /buy/{bookNumber}     =>  controllers.ApplicationController::buy
+16:29:28.556 [NinjaJetty] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.1
+
+16:29:28.556 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+16:29:28.557 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 1ms
+16:29:28.558 [NinjaJetty] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4e756867{/,null,AVAILABLE}
+16:29:28.578 [NinjaJetty] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@f99f5e0{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+16:29:28.578 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - Started @589ms
+16:29:28.578 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.35.v20201120 on <all>:8080
+16:29:28.578 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+16:29:28.578 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+16:29:28.578 [NinjaJetty] INFO  ninja.standalone.NinjaJetty -  => http://localhost:8080
+16:29:28.578 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+16:29:34.842 [qtp79438382-24] INFO  Pygmy - Buy request received for item:2
+16:29:34.842 [qtp79438382-14] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:34.842 [qtp79438382-13] INFO  Pygmy - Lookup request received for item: 3
+16:29:34.842 [qtp79438382-20] INFO  Pygmy - Buy request received for item:2
+16:29:34.842 [qtp79438382-24] INFO  Pygmy - Calling Order microservice
+16:29:34.842 [qtp79438382-20] INFO  Pygmy - Calling Order microservice
+16:29:34.843 [qtp79438382-14] INFO  Pygmy - Calling Catalog microservice
+16:29:34.843 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:29:35.513 [qtp79438382-13] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 0
+}
+16:29:35.513 [qtp79438382-13] INFO  Pygmy - Lookup response time in milliseconds : 671
+16:29:35.516 [qtp79438382-14] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 4
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 5
+} ]
+16:29:35.516 [qtp79438382-14] INFO  Pygmy - Search response time in milliseconds : 673
+16:29:35.574 [qtp79438382-24] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Successfully bought book - RPCs for Dummies"
+}
+16:29:35.574 [qtp79438382-24] INFO  Pygmy - Order response time in milliseconds : 731
+16:29:35.575 [qtp79438382-20] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Successfully bought book - RPCs for Dummies"
+}
+16:29:35.575 [qtp79438382-20] INFO  Pygmy - Order response time in milliseconds : 732
+16:29:36.669 [qtp79438382-19] INFO  Pygmy - Buy request received for item:3
+16:29:36.670 [qtp79438382-19] INFO  Pygmy - Calling Order microservice
+16:29:36.670 [qtp79438382-15] INFO  Pygmy - Buy request received for item:3
+16:29:36.670 [qtp79438382-15] INFO  Pygmy - Calling Order microservice
+16:29:36.676 [qtp79438382-16] INFO  Pygmy - Buy request received for item:4
+16:29:36.676 [qtp79438382-16] INFO  Pygmy - Calling Order microservice
+16:29:36.685 [qtp79438382-18] INFO  Pygmy - Lookup request received for item: 1
+16:29:36.685 [qtp79438382-18] INFO  Pygmy - Calling Catalog microservice
+16:29:36.688 [qtp79438382-19] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 3,
+  "message" : "Insufficient quantity of book - Xen and the Art of Surviving Graduate School"
+}
+16:29:36.688 [qtp79438382-19] INFO  Pygmy - Order response time in milliseconds : 18
+16:29:36.688 [qtp79438382-15] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 3,
+  "message" : "Insufficient quantity of book - Xen and the Art of Surviving Graduate School"
+}
+16:29:36.688 [qtp79438382-15] INFO  Pygmy - Order response time in milliseconds : 18
+16:29:36.693 [qtp79438382-18] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 4
+}
+16:29:36.693 [qtp79438382-18] INFO  Pygmy - Lookup response time in milliseconds : 8
+16:29:36.695 [qtp79438382-16] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 4,
+  "message" : "Successfully bought book - Cooking for the Impatient Graduate Student"
+}
+16:29:36.695 [qtp79438382-16] INFO  Pygmy - Order response time in milliseconds : 19
+16:29:37.720 [qtp79438382-25] INFO  Pygmy - Lookup request received for item: 4
+16:29:37.721 [qtp79438382-25] INFO  Pygmy - Calling Catalog microservice
+16:29:37.721 [qtp79438382-13] INFO  Pygmy - Buy request received for item:1
+16:29:37.721 [qtp79438382-13] INFO  Pygmy - Calling Order microservice
+16:29:37.724 [qtp79438382-20] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:37.724 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:29:37.724 [qtp79438382-24] INFO  Pygmy - Lookup request received for item: 2
+16:29:37.724 [qtp79438382-24] INFO  Pygmy - Calling Catalog microservice
+16:29:37.729 [qtp79438382-25] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 0
+}
+16:29:37.729 [qtp79438382-25] INFO  Pygmy - Lookup response time in milliseconds : 8
+16:29:37.732 [qtp79438382-20] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 5
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 0
+} ]
+16:29:37.732 [qtp79438382-20] INFO  Pygmy - Search response time in milliseconds : 8
+16:29:37.734 [qtp79438382-24] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 3
+}
+16:29:37.735 [qtp79438382-24] INFO  Pygmy - Lookup response time in milliseconds : 10
+16:29:37.747 [qtp79438382-13] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 1,
+  "message" : "Successfully bought book - How to get a good grade in 677 in 20 minutes a day"
+}
+16:29:37.747 [qtp79438382-13] INFO  Pygmy - Order response time in milliseconds : 25
+16:29:38.749 [qtp79438382-15] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:38.749 [qtp79438382-15] INFO  Pygmy - Calling Catalog microservice
+16:29:38.752 [qtp79438382-18] INFO  Pygmy - Lookup request received for item: 3
+16:29:38.752 [qtp79438382-18] INFO  Pygmy - Calling Catalog microservice
+16:29:38.753 [qtp79438382-14] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:38.753 [qtp79438382-14] INFO  Pygmy - Calling Catalog microservice
+16:29:38.755 [qtp79438382-15] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 3
+} ]
+16:29:38.755 [qtp79438382-15] INFO  Pygmy - Search response time in milliseconds : 5
+16:29:38.757 [qtp79438382-18] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 5
+}
+16:29:38.757 [qtp79438382-18] INFO  Pygmy - Lookup response time in milliseconds : 4
+16:29:38.757 [qtp79438382-14] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 3
+} ]
+16:29:38.757 [qtp79438382-14] INFO  Pygmy - Search response time in milliseconds : 4
+16:29:38.761 [qtp79438382-19] INFO  Pygmy - Buy request received for item:4
+16:29:38.761 [qtp79438382-19] INFO  Pygmy - Calling Order microservice
+16:29:38.771 [qtp79438382-19] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 4,
+  "message" : "Insufficient quantity of book - Cooking for the Impatient Graduate Student"
+}
+16:29:38.772 [qtp79438382-19] INFO  Pygmy - Order response time in milliseconds : 10
+16:29:39.775 [qtp79438382-13] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:39.775 [qtp79438382-24] INFO  Pygmy - Buy request received for item:3
+16:29:39.775 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:29:39.775 [qtp79438382-24] INFO  Pygmy - Calling Order microservice
+16:29:39.779 [qtp79438382-20] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:39.780 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:29:39.785 [qtp79438382-13] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 3
+} ]
+16:29:39.785 [qtp79438382-13] INFO  Pygmy - Search response time in milliseconds : 9
+16:29:39.791 [qtp79438382-14] INFO  Pygmy - Lookup request received for item: 2
+16:29:39.791 [qtp79438382-14] INFO  Pygmy - Calling Catalog microservice
+16:29:39.793 [qtp79438382-20] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 5
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 5
+} ]
+16:29:39.793 [qtp79438382-20] INFO  Pygmy - Search response time in milliseconds : 13
+16:29:39.798 [qtp79438382-14] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 3
+}
+16:29:39.798 [qtp79438382-14] INFO  Pygmy - Lookup response time in milliseconds : 6
+16:29:39.798 [qtp79438382-24] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 3,
+  "message" : "Successfully bought book - Xen and the Art of Surviving Graduate School"
+}
+16:29:39.798 [qtp79438382-24] INFO  Pygmy - Order response time in milliseconds : 22
+16:29:40.806 [qtp79438382-19] INFO  Pygmy - Buy request received for item:4
+16:29:40.807 [qtp79438382-19] INFO  Pygmy - Calling Order microservice
+16:29:40.810 [qtp79438382-18] INFO  Pygmy - Lookup request received for item: 3
+16:29:40.810 [qtp79438382-18] INFO  Pygmy - Calling Catalog microservice
+16:29:40.815 [qtp79438382-15] INFO  Pygmy - Lookup request received for item: 1
+16:29:40.815 [qtp79438382-15] INFO  Pygmy - Calling Catalog microservice
+16:29:40.815 [qtp79438382-13] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:40.815 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:29:40.818 [qtp79438382-18] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}
+16:29:40.818 [qtp79438382-18] INFO  Pygmy - Lookup response time in milliseconds : 7
+16:29:40.822 [qtp79438382-15] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}
+16:29:40.822 [qtp79438382-15] INFO  Pygmy - Lookup response time in milliseconds : 6
+16:29:40.823 [qtp79438382-13] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 3
+} ]
+16:29:40.823 [qtp79438382-13] INFO  Pygmy - Search response time in milliseconds : 7
+16:29:40.830 [qtp79438382-19] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 4,
+  "message" : "Successfully bought book - Cooking for the Impatient Graduate Student"
+}
+16:29:40.831 [qtp79438382-19] INFO  Pygmy - Order response time in milliseconds : 23
+16:29:41.868 [qtp79438382-24] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:41.868 [qtp79438382-24] INFO  Pygmy - Calling Catalog microservice
+16:29:41.873 [qtp79438382-20] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:41.873 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:29:41.876 [qtp79438382-14] INFO  Pygmy - Lookup request received for item: 1
+16:29:41.876 [qtp79438382-14] INFO  Pygmy - Calling Catalog microservice
+16:29:41.876 [qtp79438382-24] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 4
+} ]
+16:29:41.877 [qtp79438382-24] INFO  Pygmy - Search response time in milliseconds : 8
+16:29:41.877 [qtp79438382-25] INFO  Pygmy - Lookup request received for item: 3
+16:29:41.878 [qtp79438382-25] INFO  Pygmy - Calling Catalog microservice
+16:29:41.881 [qtp79438382-20] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 4
+} ]
+16:29:41.882 [qtp79438382-20] INFO  Pygmy - Search response time in milliseconds : 8
+16:29:41.882 [qtp79438382-14] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}
+16:29:41.882 [qtp79438382-14] INFO  Pygmy - Lookup response time in milliseconds : 5
+16:29:41.886 [qtp79438382-25] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}
+16:29:41.886 [qtp79438382-25] INFO  Pygmy - Lookup response time in milliseconds : 8
+16:29:42.902 [qtp79438382-25] INFO  Pygmy - Lookup request received for item: 1
+16:29:42.902 [qtp79438382-25] INFO  Pygmy - Calling Catalog microservice
+16:29:42.906 [qtp79438382-14] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:42.906 [qtp79438382-14] INFO  Pygmy - Calling Catalog microservice
+16:29:42.907 [qtp79438382-19] INFO  Pygmy - Lookup request received for item: 3
+16:29:42.907 [qtp79438382-19] INFO  Pygmy - Calling Catalog microservice
+16:29:42.908 [qtp79438382-13] INFO  Pygmy - Lookup request received for item: 4
+16:29:42.908 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:29:42.912 [qtp79438382-25] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}
+16:29:42.912 [qtp79438382-25] INFO  Pygmy - Lookup response time in milliseconds : 10
+16:29:42.914 [qtp79438382-19] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}
+16:29:42.914 [qtp79438382-13] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 4
+}
+16:29:42.914 [qtp79438382-14] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 4
+} ]
+16:29:42.914 [qtp79438382-13] INFO  Pygmy - Lookup response time in milliseconds : 6
+16:29:42.914 [qtp79438382-19] INFO  Pygmy - Lookup response time in milliseconds : 7
+16:29:42.914 [qtp79438382-14] INFO  Pygmy - Search response time in milliseconds : 8
+16:29:43.931 [qtp79438382-20] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:43.932 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:29:43.932 [qtp79438382-24] INFO  Pygmy - Lookup request received for item: 1
+16:29:43.933 [qtp79438382-24] INFO  Pygmy - Calling Catalog microservice
+16:29:43.935 [qtp79438382-18] INFO  Pygmy - Lookup request received for item: 3
+16:29:43.935 [qtp79438382-18] INFO  Pygmy - Calling Catalog microservice
+16:29:43.937 [qtp79438382-15] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:43.937 [qtp79438382-15] INFO  Pygmy - Calling Catalog microservice
+16:29:43.944 [qtp79438382-20] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 3
+} ]
+16:29:43.944 [qtp79438382-20] INFO  Pygmy - Search response time in milliseconds : 12
+16:29:43.944 [qtp79438382-24] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}
+16:29:43.944 [qtp79438382-24] INFO  Pygmy - Lookup response time in milliseconds : 11
+16:29:43.944 [qtp79438382-18] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}
+16:29:43.944 [qtp79438382-18] INFO  Pygmy - Lookup response time in milliseconds : 9
+16:29:43.947 [qtp79438382-15] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 3
+} ]
+16:29:43.947 [qtp79438382-15] INFO  Pygmy - Search response time in milliseconds : 10
+16:29:44.962 [qtp79438382-19] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:44.962 [qtp79438382-19] INFO  Pygmy - Calling Catalog microservice
+16:29:44.962 [qtp79438382-13] INFO  Pygmy - Lookup request received for item: 4
+16:29:44.962 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:29:44.964 [qtp79438382-18] INFO  Pygmy - Buy request received for item:2
+16:29:44.964 [qtp79438382-18] INFO  Pygmy - Calling Order microservice
+16:29:44.965 [qtp79438382-15] INFO  Pygmy - Lookup request received for item: 2
+16:29:44.965 [qtp79438382-15] INFO  Pygmy - Calling Catalog microservice
+16:29:44.970 [qtp79438382-13] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 4
+}
+16:29:44.970 [qtp79438382-13] INFO  Pygmy - Lookup response time in milliseconds : 8
+16:29:44.971 [qtp79438382-19] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 3
+} ]
+16:29:44.971 [qtp79438382-19] INFO  Pygmy - Search response time in milliseconds : 9
+16:29:44.974 [qtp79438382-15] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 3
+}
+16:29:44.974 [qtp79438382-15] INFO  Pygmy - Lookup response time in milliseconds : 8
+16:29:44.988 [qtp79438382-18] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Successfully bought book - RPCs for Dummies"
+}
+16:29:44.988 [qtp79438382-18] INFO  Pygmy - Order response time in milliseconds : 24
+16:29:45.994 [qtp79438382-14] INFO  Pygmy - Lookup request received for item: 3
+16:29:45.994 [qtp79438382-14] INFO  Pygmy - Calling Catalog microservice
+16:29:45.996 [qtp79438382-25] INFO  Pygmy - Buy request received for item:4
+16:29:45.996 [qtp79438382-25] INFO  Pygmy - Calling Order microservice
+16:29:45.996 [qtp79438382-24] INFO  Pygmy - Buy request received for item:2
+16:29:45.996 [qtp79438382-24] INFO  Pygmy - Calling Order microservice
+16:29:46.002 [qtp79438382-14] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}
+16:29:46.002 [qtp79438382-14] INFO  Pygmy - Lookup response time in milliseconds : 7
+16:29:46.002 [qtp79438382-20] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:46.002 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:29:46.010 [qtp79438382-20] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 2
+} ]
+16:29:46.011 [qtp79438382-20] INFO  Pygmy - Search response time in milliseconds : 8
+16:29:46.018 [qtp79438382-25] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 4,
+  "message" : "Successfully bought book - Cooking for the Impatient Graduate Student"
+}
+16:29:46.018 [qtp79438382-24] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Successfully bought book - RPCs for Dummies"
+}
+16:29:46.018 [qtp79438382-25] INFO  Pygmy - Order response time in milliseconds : 21
+16:29:46.018 [qtp79438382-24] INFO  Pygmy - Order response time in milliseconds : 21
+16:29:47.027 [qtp79438382-18] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:47.027 [qtp79438382-18] INFO  Pygmy - Calling Catalog microservice
+16:29:47.036 [qtp79438382-15] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:47.036 [qtp79438382-15] INFO  Pygmy - Calling Catalog microservice
+16:29:47.038 [qtp79438382-18] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 1
+} ]
+16:29:47.038 [qtp79438382-18] INFO  Pygmy - Search response time in milliseconds : 10
+16:29:47.043 [qtp79438382-19] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:47.044 [qtp79438382-19] INFO  Pygmy - Calling Catalog microservice
+16:29:47.045 [qtp79438382-13] INFO  Pygmy - Lookup request received for item: 2
+16:29:47.045 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:29:47.045 [qtp79438382-15] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 1
+} ]
+16:29:47.045 [qtp79438382-15] INFO  Pygmy - Search response time in milliseconds : 9
+16:29:47.049 [qtp79438382-13] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 1
+}
+16:29:47.050 [qtp79438382-13] INFO  Pygmy - Lookup response time in milliseconds : 4
+16:29:47.050 [qtp79438382-19] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 1
+} ]
+16:29:47.050 [qtp79438382-19] INFO  Pygmy - Search response time in milliseconds : 6
+16:29:48.064 [qtp79438382-25] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:48.064 [qtp79438382-25] INFO  Pygmy - Calling Catalog microservice
+16:29:48.065 [qtp79438382-24] INFO  Pygmy - Lookup request received for item: 2
+16:29:48.065 [qtp79438382-24] INFO  Pygmy - Calling Catalog microservice
+16:29:48.072 [qtp79438382-24] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 1
+}
+16:29:48.072 [qtp79438382-24] INFO  Pygmy - Lookup response time in milliseconds : 6
+16:29:48.072 [qtp79438382-25] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 1
+} ]
+16:29:48.072 [qtp79438382-25] INFO  Pygmy - Search response time in milliseconds : 8
+16:29:48.075 [qtp79438382-18] INFO  Pygmy - Lookup request received for item: 3
+16:29:48.075 [qtp79438382-18] INFO  Pygmy - Calling Catalog microservice
+16:29:48.078 [qtp79438382-20] INFO  Pygmy - Lookup request received for item: 1
+16:29:48.078 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:29:48.081 [qtp79438382-18] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}
+16:29:48.081 [qtp79438382-18] INFO  Pygmy - Lookup response time in milliseconds : 6
+16:29:48.084 [qtp79438382-20] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 3
+}
+16:29:48.084 [qtp79438382-20] INFO  Pygmy - Lookup response time in milliseconds : 6
+16:29:49.102 [qtp79438382-13] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:49.102 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:29:49.106 [qtp79438382-25] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:49.106 [qtp79438382-25] INFO  Pygmy - Calling Catalog microservice
+16:29:49.106 [qtp79438382-19] INFO  Pygmy - Buy request received for item:1
+16:29:49.106 [qtp79438382-19] INFO  Pygmy - Calling Order microservice
+16:29:49.109 [qtp79438382-24] INFO  Pygmy - Buy request received for item:2
+16:29:49.110 [qtp79438382-24] INFO  Pygmy - Calling Order microservice
+16:29:49.110 [qtp79438382-13] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 3
+} ]
+16:29:49.110 [qtp79438382-13] INFO  Pygmy - Search response time in milliseconds : 8
+16:29:49.113 [qtp79438382-25] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 3
+} ]
+16:29:49.113 [qtp79438382-25] INFO  Pygmy - Search response time in milliseconds : 7
+16:29:49.125 [qtp79438382-19] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 1,
+  "message" : "Successfully bought book - How to get a good grade in 677 in 20 minutes a day"
+}
+16:29:49.125 [qtp79438382-24] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Successfully bought book - RPCs for Dummies"
+}
+16:29:49.125 [qtp79438382-19] INFO  Pygmy - Order response time in milliseconds : 18
+16:29:49.125 [qtp79438382-24] INFO  Pygmy - Order response time in milliseconds : 15
+16:29:50.129 [qtp79438382-20] INFO  Pygmy - Lookup request received for item: 3
+16:29:50.130 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:29:50.135 [qtp79438382-15] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:50.135 [qtp79438382-15] INFO  Pygmy - Calling Catalog microservice
+16:29:50.137 [qtp79438382-20] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}
+16:29:50.138 [qtp79438382-20] INFO  Pygmy - Lookup response time in milliseconds : 8
+16:29:50.144 [qtp79438382-15] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 3
+} ]
+16:29:50.144 [qtp79438382-14] INFO  Pygmy - Lookup request received for item: 1
+16:29:50.144 [qtp79438382-15] INFO  Pygmy - Search response time in milliseconds : 9
+16:29:50.144 [qtp79438382-14] INFO  Pygmy - Calling Catalog microservice
+16:29:50.144 [qtp79438382-18] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:50.145 [qtp79438382-18] INFO  Pygmy - Calling Catalog microservice
+16:29:50.150 [qtp79438382-14] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 2
+}
+16:29:50.150 [qtp79438382-14] INFO  Pygmy - Lookup response time in milliseconds : 5
+16:29:50.151 [qtp79438382-18] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 2
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 0
+} ]
+16:29:50.151 [qtp79438382-18] INFO  Pygmy - Search response time in milliseconds : 6
+16:29:51.154 [qtp79438382-24] INFO  Pygmy - Buy request received for item:1
+16:29:51.154 [qtp79438382-24] INFO  Pygmy - Calling Order microservice
+16:29:51.158 [qtp79438382-19] INFO  Pygmy - Lookup request received for item: 1
+16:29:51.158 [qtp79438382-19] INFO  Pygmy - Calling Catalog microservice
+16:29:51.162 [qtp79438382-19] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 2
+}
+16:29:51.163 [qtp79438382-19] INFO  Pygmy - Lookup response time in milliseconds : 4
+16:29:51.167 [qtp79438382-25] INFO  Pygmy - Lookup request received for item: 4
+16:29:51.167 [qtp79438382-25] INFO  Pygmy - Calling Catalog microservice
+16:29:51.167 [qtp79438382-20] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:51.168 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:29:51.169 [qtp79438382-24] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 1,
+  "message" : "Successfully bought book - How to get a good grade in 677 in 20 minutes a day"
+}
+16:29:51.169 [qtp79438382-24] INFO  Pygmy - Order response time in milliseconds : 14
+16:29:51.171 [qtp79438382-25] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 3
+}
+16:29:51.172 [qtp79438382-25] INFO  Pygmy - Lookup response time in milliseconds : 4
+16:29:51.172 [qtp79438382-20] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 3
+} ]
+16:29:51.172 [qtp79438382-20] INFO  Pygmy - Search response time in milliseconds : 4
+16:29:52.186 [qtp79438382-18] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:52.187 [qtp79438382-18] INFO  Pygmy - Calling Catalog microservice
+16:29:52.187 [qtp79438382-14] INFO  Pygmy - Buy request received for item:2
+16:29:52.187 [qtp79438382-14] INFO  Pygmy - Calling Order microservice
+16:29:52.189 [qtp79438382-19] INFO  Pygmy - Lookup request received for item: 3
+16:29:52.189 [qtp79438382-19] INFO  Pygmy - Calling Catalog microservice
+16:29:52.191 [qtp79438382-15] INFO  Pygmy - Lookup request received for item: 1
+16:29:52.191 [qtp79438382-15] INFO  Pygmy - Calling Catalog microservice
+16:29:52.196 [qtp79438382-19] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}
+16:29:52.196 [qtp79438382-19] INFO  Pygmy - Lookup response time in milliseconds : 7
+16:29:52.196 [qtp79438382-18] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 1
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 0
+} ]
+16:29:52.196 [qtp79438382-18] INFO  Pygmy - Search response time in milliseconds : 9
+16:29:52.197 [qtp79438382-15] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 1
+}
+16:29:52.197 [qtp79438382-15] INFO  Pygmy - Lookup response time in milliseconds : 5
+16:29:52.210 [qtp79438382-14] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Insufficient quantity of book - RPCs for Dummies"
+}
+16:29:52.210 [qtp79438382-14] INFO  Pygmy - Order response time in milliseconds : 23
+16:29:53.222 [qtp79438382-24] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:53.222 [qtp79438382-24] INFO  Pygmy - Calling Catalog microservice
+16:29:53.222 [qtp79438382-25] INFO  Pygmy - Buy request received for item:4
+16:29:53.222 [qtp79438382-25] INFO  Pygmy - Calling Order microservice
+16:29:53.224 [qtp79438382-20] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:53.224 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:29:53.229 [qtp79438382-24] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 1
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 5
+} ]
+16:29:53.229 [qtp79438382-24] INFO  Pygmy - Search response time in milliseconds : 7
+16:29:53.230 [qtp79438382-20] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 1
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 5
+} ]
+16:29:53.230 [qtp79438382-20] INFO  Pygmy - Search response time in milliseconds : 6
+16:29:53.235 [qtp79438382-13] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:53.235 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:29:53.240 [qtp79438382-13] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 2
+} ]
+16:29:53.241 [qtp79438382-13] INFO  Pygmy - Search response time in milliseconds : 5
+16:29:53.243 [qtp79438382-25] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 4,
+  "message" : "Successfully bought book - Cooking for the Impatient Graduate Student"
+}
+16:29:53.243 [qtp79438382-25] INFO  Pygmy - Order response time in milliseconds : 21
+16:29:54.249 [qtp79438382-15] INFO  Pygmy - Lookup request received for item: 4
+16:29:54.250 [qtp79438382-15] INFO  Pygmy - Calling Catalog microservice
+16:29:54.258 [qtp79438382-15] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 2
+}
+16:29:54.259 [qtp79438382-15] INFO  Pygmy - Lookup response time in milliseconds : 8
+16:29:54.259 [qtp79438382-18] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:54.259 [qtp79438382-18] INFO  Pygmy - Calling Catalog microservice
+16:29:54.266 [qtp79438382-20] INFO  Pygmy - Lookup request received for item: 3
+16:29:54.266 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:29:54.266 [qtp79438382-14] INFO  Pygmy - Lookup request received for item: 2
+16:29:54.267 [qtp79438382-14] INFO  Pygmy - Calling Catalog microservice
+16:29:54.271 [qtp79438382-18] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 2
+} ]
+16:29:54.271 [qtp79438382-18] INFO  Pygmy - Search response time in milliseconds : 12
+16:29:54.271 [qtp79438382-20] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}
+16:29:54.271 [qtp79438382-20] INFO  Pygmy - Lookup response time in milliseconds : 4
+16:29:54.272 [qtp79438382-14] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 5
+}
+16:29:54.272 [qtp79438382-14] INFO  Pygmy - Lookup response time in milliseconds : 5
+16:29:55.276 [qtp79438382-25] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:55.276 [qtp79438382-25] INFO  Pygmy - Calling Catalog microservice
+16:29:55.283 [qtp79438382-13] INFO  Pygmy - Lookup request received for item: 2
+16:29:55.283 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:29:55.285 [qtp79438382-25] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 2
+} ]
+16:29:55.285 [qtp79438382-25] INFO  Pygmy - Search response time in milliseconds : 9
+16:29:55.293 [qtp79438382-13] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 5
+}
+16:29:55.293 [qtp79438382-13] INFO  Pygmy - Lookup response time in milliseconds : 9
+16:29:55.299 [qtp79438382-15] INFO  Pygmy - Buy request received for item:1
+16:29:55.299 [qtp79438382-15] INFO  Pygmy - Calling Order microservice
+16:29:55.299 [qtp79438382-24] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:55.299 [qtp79438382-24] INFO  Pygmy - Calling Catalog microservice
+16:29:55.305 [qtp79438382-24] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 1
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 5
+} ]
+16:29:55.305 [qtp79438382-24] INFO  Pygmy - Search response time in milliseconds : 5
+16:29:55.317 [qtp79438382-15] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 1,
+  "message" : "Successfully bought book - How to get a good grade in 677 in 20 minutes a day"
+}
+16:29:55.317 [qtp79438382-15] INFO  Pygmy - Order response time in milliseconds : 17
+16:29:56.326 [qtp79438382-14] INFO  Pygmy - Lookup request received for item: 3
+16:29:56.327 [qtp79438382-14] INFO  Pygmy - Calling Catalog microservice
+16:29:56.327 [qtp79438382-20] INFO  Pygmy - Buy request received for item:2
+16:29:56.327 [qtp79438382-20] INFO  Pygmy - Calling Order microservice
+16:29:56.329 [qtp79438382-13] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:56.330 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:29:56.333 [qtp79438382-14] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}
+16:29:56.333 [qtp79438382-14] INFO  Pygmy - Lookup response time in milliseconds : 6
+16:29:56.336 [qtp79438382-13] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 2
+} ]
+16:29:56.336 [qtp79438382-13] INFO  Pygmy - Search response time in milliseconds : 6
+16:29:56.339 [qtp79438382-25] INFO  Pygmy - Buy request received for item:1
+16:29:56.340 [qtp79438382-25] INFO  Pygmy - Calling Order microservice
+16:29:56.349 [qtp79438382-20] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Successfully bought book - RPCs for Dummies"
+}
+16:29:56.349 [qtp79438382-20] INFO  Pygmy - Order response time in milliseconds : 21
+16:29:56.357 [qtp79438382-25] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 1,
+  "message" : "Insufficient quantity of book - How to get a good grade in 677 in 20 minutes a day"
+}
+16:29:56.357 [qtp79438382-25] INFO  Pygmy - Order response time in milliseconds : 17
+16:29:57.359 [qtp79438382-15] INFO  Pygmy - Lookup request received for item: 2
+16:29:57.359 [qtp79438382-15] INFO  Pygmy - Calling Catalog microservice
+16:29:57.360 [qtp79438382-24] INFO  Pygmy - Lookup request received for item: 1
+16:29:57.360 [qtp79438382-24] INFO  Pygmy - Calling Catalog microservice
+16:29:57.364 [qtp79438382-18] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:57.364 [qtp79438382-18] INFO  Pygmy - Calling Catalog microservice
+16:29:57.367 [qtp79438382-24] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 5
+}
+16:29:57.367 [qtp79438382-24] INFO  Pygmy - Lookup response time in milliseconds : 6
+16:29:57.367 [qtp79438382-15] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 4
+}
+16:29:57.367 [qtp79438382-15] INFO  Pygmy - Lookup response time in milliseconds : 8
+16:29:57.370 [qtp79438382-18] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 4
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 2
+} ]
+16:29:57.370 [qtp79438382-18] INFO  Pygmy - Search response time in milliseconds : 6
+16:29:57.373 [qtp79438382-13] INFO  Pygmy - Buy request received for item:3
+16:29:57.373 [qtp79438382-13] INFO  Pygmy - Calling Order microservice
+16:29:57.388 [qtp79438382-13] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 3,
+  "message" : "Successfully bought book - Xen and the Art of Surviving Graduate School"
+}
+16:29:57.388 [qtp79438382-13] INFO  Pygmy - Order response time in milliseconds : 14
+16:29:58.392 [qtp79438382-25] INFO  Pygmy - Buy request received for item:4
+16:29:58.392 [qtp79438382-20] INFO  Pygmy - Buy request received for item:3
+16:29:58.392 [qtp79438382-25] INFO  Pygmy - Calling Order microservice
+16:29:58.392 [qtp79438382-20] INFO  Pygmy - Calling Order microservice
+16:29:58.394 [qtp79438382-14] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:58.394 [qtp79438382-14] INFO  Pygmy - Calling Catalog microservice
+16:29:58.400 [qtp79438382-14] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 5
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 4
+} ]
+16:29:58.400 [qtp79438382-14] INFO  Pygmy - Search response time in milliseconds : 6
+16:29:58.410 [qtp79438382-18] INFO  Pygmy - Lookup request received for item: 4
+16:29:58.410 [qtp79438382-18] INFO  Pygmy - Calling Catalog microservice
+16:29:58.411 [qtp79438382-20] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 3,
+  "message" : "Successfully bought book - Xen and the Art of Surviving Graduate School"
+}
+16:29:58.411 [qtp79438382-25] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 4,
+  "message" : "Successfully bought book - Cooking for the Impatient Graduate Student"
+}
+16:29:58.411 [qtp79438382-20] INFO  Pygmy - Order response time in milliseconds : 19
+16:29:58.412 [qtp79438382-25] INFO  Pygmy - Order response time in milliseconds : 19
+16:29:58.415 [qtp79438382-18] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 1
+}
+16:29:58.415 [qtp79438382-18] INFO  Pygmy - Lookup response time in milliseconds : 4
+16:29:59.421 [qtp79438382-13] INFO  Pygmy - Search request received for topic: distributed+systems
+16:29:59.421 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:29:59.428 [qtp79438382-13] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 5
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 4
+} ]
+16:29:59.428 [qtp79438382-13] INFO  Pygmy - Search response time in milliseconds : 7
+16:29:59.430 [qtp79438382-15] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:59.430 [qtp79438382-24] INFO  Pygmy - Search request received for topic: graduate+school
+16:29:59.430 [qtp79438382-15] INFO  Pygmy - Calling Catalog microservice
+16:29:59.431 [qtp79438382-24] INFO  Pygmy - Calling Catalog microservice
+16:29:59.431 [qtp79438382-14] INFO  Pygmy - Buy request received for item:4
+16:29:59.431 [qtp79438382-14] INFO  Pygmy - Calling Order microservice
+16:29:59.439 [qtp79438382-24] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 2
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 1
+} ]
+16:29:59.439 [qtp79438382-24] INFO  Pygmy - Search response time in milliseconds : 7
+16:29:59.439 [qtp79438382-15] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 2
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 1
+} ]
+16:29:59.439 [qtp79438382-15] INFO  Pygmy - Search response time in milliseconds : 8
+16:29:59.450 [qtp79438382-14] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 4,
+  "message" : "Successfully bought book - Cooking for the Impatient Graduate Student"
+}
+16:29:59.450 [qtp79438382-14] INFO  Pygmy - Order response time in milliseconds : 18
+16:30:00.462 [qtp79438382-25] INFO  Pygmy - Search request received for topic: distributed+systems
+16:30:00.463 [qtp79438382-25] INFO  Pygmy - Calling Catalog microservice
+16:30:00.465 [qtp79438382-18] INFO  Pygmy - Buy request received for item:3
+16:30:00.466 [qtp79438382-18] INFO  Pygmy - Calling Order microservice
+16:30:00.467 [qtp79438382-13] INFO  Pygmy - Search request received for topic: distributed+systems
+16:30:00.467 [qtp79438382-13] INFO  Pygmy - Calling Catalog microservice
+16:30:00.470 [qtp79438382-25] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 5
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 4
+} ]
+16:30:00.470 [qtp79438382-25] INFO  Pygmy - Search response time in milliseconds : 7
+16:30:00.470 [qtp79438382-20] INFO  Pygmy - Lookup request received for item: 4
+16:30:00.470 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:30:00.474 [qtp79438382-13] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 1,
+  "bookName" : "How to get a good grade in 677 in 20 minutes a day",
+  "topic" : "distributed systems",
+  "cost" : 25,
+  "count" : 5
+}, {
+  "bookNumber" : 2,
+  "bookName" : "RPCs for Dummies",
+  "topic" : "distributed systems",
+  "cost" : 50,
+  "count" : 4
+} ]
+16:30:00.474 [qtp79438382-13] INFO  Pygmy - Search response time in milliseconds : 6
+16:30:00.477 [qtp79438382-20] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 0
+}
+16:30:00.477 [qtp79438382-20] INFO  Pygmy - Lookup response time in milliseconds : 6
+16:30:00.484 [qtp79438382-18] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 3,
+  "message" : "Successfully bought book - Xen and the Art of Surviving Graduate School"
+}
+16:30:00.484 [qtp79438382-18] INFO  Pygmy - Order response time in milliseconds : 18
+16:30:01.498 [qtp79438382-15] INFO  Pygmy - Buy request received for item:2
+16:30:01.498 [qtp79438382-24] INFO  Pygmy - Buy request received for item:2
+16:30:01.498 [qtp79438382-24] INFO  Pygmy - Calling Order microservice
+16:30:01.498 [qtp79438382-15] INFO  Pygmy - Calling Order microservice
+16:30:01.503 [qtp79438382-19] INFO  Pygmy - Search request received for topic: graduate+school
+16:30:01.503 [qtp79438382-19] INFO  Pygmy - Calling Catalog microservice
+16:30:01.503 [qtp79438382-14] INFO  Pygmy - Buy request received for item:4
+16:30:01.503 [qtp79438382-14] INFO  Pygmy - Calling Order microservice
+16:30:01.512 [qtp79438382-19] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 1
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 0
+} ]
+16:30:01.512 [qtp79438382-19] INFO  Pygmy - Search response time in milliseconds : 9
+16:30:01.519 [qtp79438382-24] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Successfully bought book - RPCs for Dummies"
+}
+16:30:01.520 [qtp79438382-15] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Successfully bought book - RPCs for Dummies"
+}
+16:30:01.520 [qtp79438382-24] INFO  Pygmy - Order response time in milliseconds : 21
+16:30:01.520 [qtp79438382-15] INFO  Pygmy - Order response time in milliseconds : 21
+16:30:01.523 [qtp79438382-14] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 4,
+  "message" : "Insufficient quantity of book - Cooking for the Impatient Graduate Student"
+}
+16:30:01.523 [qtp79438382-14] INFO  Pygmy - Order response time in milliseconds : 19
+16:30:02.542 [qtp79438382-18] INFO  Pygmy - Buy request received for item:2
+16:30:02.542 [qtp79438382-13] INFO  Pygmy - Buy request received for item:2
+16:30:02.542 [qtp79438382-18] INFO  Pygmy - Calling Order microservice
+16:30:02.542 [qtp79438382-13] INFO  Pygmy - Calling Order microservice
+16:30:02.545 [qtp79438382-20] INFO  Pygmy - Lookup request received for item: 3
+16:30:02.545 [qtp79438382-25] INFO  Pygmy - Search request received for topic: graduate+school
+16:30:02.545 [qtp79438382-20] INFO  Pygmy - Calling Catalog microservice
+16:30:02.545 [qtp79438382-25] INFO  Pygmy - Calling Catalog microservice
+16:30:02.555 [qtp79438382-20] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 1
+}
+16:30:02.555 [qtp79438382-20] INFO  Pygmy - Lookup response time in milliseconds : 10
+16:30:02.555 [qtp79438382-25] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 1
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 5
+} ]
+16:30:02.555 [qtp79438382-25] INFO  Pygmy - Search response time in milliseconds : 10
+16:30:02.569 [qtp79438382-13] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Successfully bought book - RPCs for Dummies"
+}
+16:30:02.569 [qtp79438382-18] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Successfully bought book - RPCs for Dummies"
+}
+16:30:02.569 [qtp79438382-13] INFO  Pygmy - Order response time in milliseconds : 26
+16:30:02.569 [qtp79438382-18] INFO  Pygmy - Order response time in milliseconds : 26
+16:30:03.584 [qtp79438382-14] INFO  Pygmy - Buy request received for item:2
+16:30:03.584 [qtp79438382-14] INFO  Pygmy - Calling Order microservice
+16:30:03.585 [qtp79438382-24] INFO  Pygmy - Lookup request received for item: 3
+16:30:03.585 [qtp79438382-24] INFO  Pygmy - Calling Catalog microservice
+16:30:03.585 [qtp79438382-19] INFO  Pygmy - Search request received for topic: graduate+school
+16:30:03.585 [qtp79438382-19] INFO  Pygmy - Calling Catalog microservice
+16:30:03.594 [qtp79438382-24] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 1
+}
+16:30:03.594 [qtp79438382-24] INFO  Pygmy - Lookup response time in milliseconds : 9
+16:30:03.595 [qtp79438382-19] INFO  Pygmy - Response for search request: [ {
+  "bookNumber" : 3,
+  "bookName" : "Xen and the Art of Surviving Graduate School",
+  "topic" : "graduate school",
+  "cost" : 40,
+  "count" : 1
+}, {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 5
+} ]
+16:30:03.595 [qtp79438382-19] INFO  Pygmy - Search response time in milliseconds : 9
+16:30:03.596 [qtp79438382-15] INFO  Pygmy - Lookup request received for item: 4
+16:30:03.596 [qtp79438382-15] INFO  Pygmy - Calling Catalog microservice
+16:30:03.601 [qtp79438382-15] INFO  Pygmy - Response for lookup request: {
+  "bookNumber" : 4,
+  "bookName" : "Cooking for the Impatient Graduate Student",
+  "topic" : "graduate school",
+  "cost" : 60,
+  "count" : 5
+}
+16:30:03.602 [qtp79438382-15] INFO  Pygmy - Lookup response time in milliseconds : 5
+16:30:03.603 [qtp79438382-14] INFO  Pygmy - Response for buy request: {
+  "bookNumber" : 2,
+  "message" : "Insufficient quantity of book - RPCs for Dummies"
+}
+16:30:03.603 [qtp79438382-14] INFO  Pygmy - Order response time in milliseconds : 18
+16:30:03.957 [Thread-8] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+16:30:03.958 [Thread-8] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 1ms
+16:30:03.958 [Thread-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4e756867{/,null,STOPPED}
+16:30:03.958 [Thread-8] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:8080
+16:30:03.977 [Thread-8] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@f99f5e0{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+16:30:03.977 [Thread-8] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:8080

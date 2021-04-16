@@ -1,0 +1,372 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------< [0;36morg.example:catalog[0;1m >-------------------------[m
+[[1;34mINFO[m] [1mBuilding catalog 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mninja-maven-plugin:6.5.0:run[m [1m(default-cli)[m @ [36mcatalog[0;1m ---[m
+[[1;34mINFO[m] ------------------------------------------------------------------------
+[[1;34mINFO[m] Ninja will watch dirs:
+[[1;34mINFO[m]  /Users/bhumika/Desktop/Spring_2021_Courses/677_Distributed_and_Operating_Systems/Projects/Pygmy/catalog/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Ninja will launch with:
+[[1;34mINFO[m]       context: <default>
+[[1;34mINFO[m]          mode: dev
+[[1;34mINFO[m]          port: <default>
+[[1;34mINFO[m]      ssl port: <default>
+[[1;34mINFO[m]     mainClass: ninja.standalone.AutoStandalone
+[[1;34mINFO[m] extra jvmArgs: -Dninja.external.configuration=conf/hostname.conf
+[[1;34mINFO[m] ------------------------------------------------------------------------
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/Users/bhumika/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+rvlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@522a32b1{STARTED}
+16:29:20.483 [NinjaJetty] INFO  ninja.Bootstrap - Successfully configured Logback.
+16:29:20.483 [NinjaJetty] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+16:29:20.930 [NinjaJetty] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+16:29:20.931 [NinjaJetty] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+16:29:20.965 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:29:20.965 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+16:29:20.965 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+16:29:20.965 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+16:29:20.965 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+16:29:20.965 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+16:29:20.965 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+16:29:20.965 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+16:29:20.969 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:29:20.969 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+16:29:20.969 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+16:29:20.969 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+16:29:20.969 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+16:29:20.969 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+16:29:20.969 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+16:29:20.970 [NinjaJetty] INFO  ninja.Bootstrap - Ninja injector started in 486 ms.
+16:29:20.978 [NinjaJetty] WARN  ninja.params.ControllerMethodInvoker - Using deprecated non-strict mode for injection of parameters into controller (ninja.strict_argument_extractors = false). This mode will soon be removed from Ninja. Make sure you upgrade your application as soon as possible. More: http://www.ninjaframework.org/documentation/basic_concepts/controllers.html 'A note about null and Optional'.
+16:29:20.980 [NinjaJetty] INFO  ninja.RouterImpl - ----------------------------------------------------------------
+16:29:20.980 [NinjaJetty] INFO  ninja.RouterImpl - Registered routes
+16:29:20.980 [NinjaJetty] INFO  ninja.RouterImpl - ----------------------------------------------------------------
+16:29:20.980 [NinjaJetty] INFO  ninja.RouterImpl - GET  /queryBySubject/{topic}  =>  controllers.ApplicationController::queryBySubject
+16:29:20.980 [NinjaJetty] INFO  ninja.RouterImpl - GET  /queryByItem/{id}        =>  controllers.ApplicationController::queryByItem
+16:29:20.980 [NinjaJetty] INFO  ninja.RouterImpl - POST /update/{id}/{type}      =>  controllers.ApplicationController::update
+16:29:20.980 [NinjaJetty] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  http://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.5.0
+
+16:29:20.980 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+16:29:20.981 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 1ms
+16:29:20.986 [NinjaJetty] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@fb5d334{/,null,AVAILABLE}
+16:29:21.010 [NinjaJetty] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@57576994{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+16:29:21.010 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - Started @997ms
+16:29:21.010 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.18.v20190429 on <all>:8081
+16:29:21.010 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+16:29:21.010 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+16:29:21.011 [NinjaJetty] INFO  ninja.standalone.NinjaJetty -  => http://localhost:8081
+16:29:21.011 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+16:29:35.022 [qtp1371376476-18] INFO  Pygmy - first null
+16:29:35.411 [qtp1371376476-18] INFO  Pygmy - testorg.sqlite.jdbc4.JDBC4Connection@3460e3ed
+16:29:35.413 [qtp1371376476-18] INFO  Pygmy - Current inventory in library: {1=Book{bookNumber=1, bookName='How to get a good grade in 677 in 20 minutes a day', topic='distributed systems', cost=25, count=4}, 2=Book{bookNumber=2, bookName='RPCs for Dummies', topic='distributed systems', cost=50, count=5}, 3=Book{bookNumber=3, bookName='Xen and the Art of Surviving Graduate School', topic='graduate school', cost=40, count=0}, 4=Book{bookNumber=4, bookName='Cooking for the Impatient Graduate Student', topic='graduate school', cost=60, count=1}}
+16:29:35.413 [qtp1371376476-18] INFO  Pygmy - Query by Item request received for item: 3
+16:29:35.413 [qtp1371376476-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:35.413 [qtp1371376476-24] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:35.413 [qtp1371376476-24] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:35.413 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 2
+16:29:35.413 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:35.413 [qtp1371376476-15] INFO  Pygmy - Query by Item request received for item: 2
+16:29:35.413 [qtp1371376476-15] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:35.514 [qtp1371376476-16] INFO  Pygmy - Buy update request received for item: 2
+16:29:35.516 [qtp1371376476-14] INFO  Pygmy - Buy update request received for item: 2
+16:29:35.516 [qtp1371376476-16] INFO  Pygmy - Update response time in milliseconds : 1
+16:29:35.517 [qtp1371376476-14] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:36.677 [qtp1371376476-19] INFO  Pygmy - Query by Item request received for item: 3
+16:29:36.677 [qtp1371376476-19] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:36.678 [qtp1371376476-20] INFO  Pygmy - Query by Item request received for item: 3
+16:29:36.678 [qtp1371376476-20] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:36.682 [qtp1371376476-25] INFO  Pygmy - Restock update request received for item: 3
+16:29:36.683 [qtp1371376476-25] INFO  Pygmy - Restocking book - 3
+16:29:36.683 [qtp1371376476-18] INFO  Pygmy - Restock update request received for item: 3
+16:29:36.683 [qtp1371376476-18] INFO  Pygmy - Restocking book - 3
+16:29:36.683 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 4
+16:29:36.683 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:36.684 [qtp1371376476-25] INFO  Pygmy - Update response time in milliseconds : 1
+16:29:36.684 [qtp1371376476-18] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:36.689 [qtp1371376476-26] INFO  Pygmy - Query by Item request received for item: 1
+16:29:36.690 [qtp1371376476-26] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:36.690 [qtp1371376476-20] INFO  Pygmy - Buy update request received for item: 4
+16:29:36.691 [qtp1371376476-20] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:37.725 [qtp1371376476-19] INFO  Pygmy - Query by Item request received for item: 4
+16:29:37.725 [qtp1371376476-19] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:37.728 [qtp1371376476-27] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:37.728 [qtp1371376476-27] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:37.729 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 2
+16:29:37.729 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:37.737 [qtp1371376476-18] INFO  Pygmy - Query by Item request received for item: 1
+16:29:37.737 [qtp1371376476-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:37.742 [qtp1371376476-20] INFO  Pygmy - Buy update request received for item: 1
+16:29:37.743 [qtp1371376476-20] INFO  Pygmy - Update response time in milliseconds : 1
+16:29:38.752 [qtp1371376476-19] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:38.752 [qtp1371376476-19] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:38.755 [qtp1371376476-26] INFO  Pygmy - Query by Item request received for item: 3
+16:29:38.755 [qtp1371376476-26] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:38.756 [qtp1371376476-20] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:38.756 [qtp1371376476-20] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:38.765 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 4
+16:29:38.765 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:38.768 [qtp1371376476-27] INFO  Pygmy - Restock update request received for item: 4
+16:29:38.769 [qtp1371376476-27] INFO  Pygmy - Restocking book - 4
+16:29:38.769 [qtp1371376476-27] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:39.780 [qtp1371376476-19] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:39.780 [qtp1371376476-19] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:39.785 [qtp1371376476-18] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:39.785 [qtp1371376476-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:39.786 [qtp1371376476-20] INFO  Pygmy - Query by Item request received for item: 3
+16:29:39.786 [qtp1371376476-20] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:39.792 [qtp1371376476-13] INFO  Pygmy - Buy update request received for item: 3
+16:29:39.794 [qtp1371376476-13] INFO  Pygmy - Update response time in milliseconds : 1
+16:29:39.794 [qtp1371376476-27] INFO  Pygmy - Query by Item request received for item: 2
+16:29:39.794 [qtp1371376476-27] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:40.815 [qtp1371376476-19] INFO  Pygmy - Query by Item request received for item: 3
+16:29:40.815 [qtp1371376476-19] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:40.818 [qtp1371376476-26] INFO  Pygmy - Query by Item request received for item: 4
+16:29:40.818 [qtp1371376476-26] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:40.818 [qtp1371376476-20] INFO  Pygmy - Query by Item request received for item: 1
+16:29:40.818 [qtp1371376476-20] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:40.819 [qtp1371376476-18] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:40.819 [qtp1371376476-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:40.825 [qtp1371376476-27] INFO  Pygmy - Buy update request received for item: 4
+16:29:40.826 [qtp1371376476-27] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:41.872 [qtp1371376476-19] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:41.872 [qtp1371376476-19] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:41.879 [qtp1371376476-13] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:41.879 [qtp1371376476-13] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:41.879 [qtp1371376476-25] INFO  Pygmy - Query by Item request received for item: 1
+16:29:41.879 [qtp1371376476-25] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:41.882 [qtp1371376476-18] INFO  Pygmy - Query by Item request received for item: 3
+16:29:41.882 [qtp1371376476-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:42.909 [qtp1371376476-27] INFO  Pygmy - Query by Item request received for item: 1
+16:29:42.909 [qtp1371376476-27] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:42.911 [qtp1371376476-19] INFO  Pygmy - Query by Item request received for item: 3
+16:29:42.911 [qtp1371376476-19] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:42.911 [qtp1371376476-20] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:42.911 [qtp1371376476-20] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:42.911 [qtp1371376476-25] INFO  Pygmy - Query by Item request received for item: 4
+16:29:42.911 [qtp1371376476-25] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:43.937 [qtp1371376476-27] INFO  Pygmy - Query by Item request received for item: 1
+16:29:43.937 [qtp1371376476-18] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:43.937 [qtp1371376476-27] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:43.937 [qtp1371376476-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:43.939 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 3
+16:29:43.939 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:43.940 [qtp1371376476-26] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:43.940 [qtp1371376476-26] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:44.967 [qtp1371376476-27] INFO  Pygmy - Query by Item request received for item: 4
+16:29:44.967 [qtp1371376476-27] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:44.967 [qtp1371376476-25] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:44.967 [qtp1371376476-25] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:44.970 [qtp1371376476-20] INFO  Pygmy - Query by Item request received for item: 2
+16:29:44.970 [qtp1371376476-20] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:44.977 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 2
+16:29:44.977 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:44.983 [qtp1371376476-26] INFO  Pygmy - Buy update request received for item: 2
+16:29:44.984 [qtp1371376476-26] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:45.999 [qtp1371376476-19] INFO  Pygmy - Query by Item request received for item: 3
+16:29:45.999 [qtp1371376476-19] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:46.005 [qtp1371376476-25] INFO  Pygmy - Query by Item request received for item: 4
+16:29:46.005 [qtp1371376476-26] INFO  Pygmy - Query by Item request received for item: 2
+16:29:46.005 [qtp1371376476-25] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:46.005 [qtp1371376476-26] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:46.007 [qtp1371376476-13] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:46.007 [qtp1371376476-13] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:46.012 [qtp1371376476-20] INFO  Pygmy - Buy update request received for item: 4
+16:29:46.012 [qtp1371376476-19] INFO  Pygmy - Buy update request received for item: 2
+16:29:46.013 [qtp1371376476-20] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:46.013 [qtp1371376476-19] INFO  Pygmy - Update response time in milliseconds : 1
+16:29:47.032 [qtp1371376476-25] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:47.033 [qtp1371376476-25] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:47.041 [qtp1371376476-19] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:47.041 [qtp1371376476-19] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:47.047 [qtp1371376476-27] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:47.047 [qtp1371376476-27] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:47.047 [qtp1371376476-20] INFO  Pygmy - Query by Item request received for item: 2
+16:29:47.047 [qtp1371376476-20] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:48.069 [qtp1371376476-18] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:48.069 [qtp1371376476-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:48.069 [qtp1371376476-25] INFO  Pygmy - Query by Item request received for item: 2
+16:29:48.069 [qtp1371376476-25] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:48.078 [qtp1371376476-19] INFO  Pygmy - Query by Item request received for item: 3
+16:29:48.078 [qtp1371376476-19] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:48.081 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 1
+16:29:48.081 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:49.106 [qtp1371376476-20] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:49.106 [qtp1371376476-20] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:49.110 [qtp1371376476-27] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:49.110 [qtp1371376476-27] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:49.115 [qtp1371376476-25] INFO  Pygmy - Query by Item request received for item: 1
+16:29:49.115 [qtp1371376476-25] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:49.117 [qtp1371376476-19] INFO  Pygmy - Query by Item request received for item: 2
+16:29:49.117 [qtp1371376476-19] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:49.120 [qtp1371376476-13] INFO  Pygmy - Buy update request received for item: 1
+16:29:49.121 [qtp1371376476-13] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:49.121 [qtp1371376476-20] INFO  Pygmy - Buy update request received for item: 2
+16:29:49.122 [qtp1371376476-20] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:50.134 [qtp1371376476-27] INFO  Pygmy - Query by Item request received for item: 3
+16:29:50.134 [qtp1371376476-27] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:50.139 [qtp1371376476-25] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:50.139 [qtp1371376476-25] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:50.147 [qtp1371376476-19] INFO  Pygmy - Query by Item request received for item: 1
+16:29:50.147 [qtp1371376476-19] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:50.148 [qtp1371376476-18] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:50.148 [qtp1371376476-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:51.160 [qtp1371376476-20] INFO  Pygmy - Query by Item request received for item: 1
+16:29:51.160 [qtp1371376476-20] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:51.160 [qtp1371376476-27] INFO  Pygmy - Query by Item request received for item: 1
+16:29:51.160 [qtp1371376476-27] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:51.165 [qtp1371376476-25] INFO  Pygmy - Buy update request received for item: 1
+16:29:51.165 [qtp1371376476-25] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:51.170 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 4
+16:29:51.170 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:51.171 [qtp1371376476-18] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:51.171 [qtp1371376476-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:52.193 [qtp1371376476-19] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:52.193 [qtp1371376476-19] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:52.193 [qtp1371376476-27] INFO  Pygmy - Query by Item request received for item: 3
+16:29:52.193 [qtp1371376476-27] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:52.194 [qtp1371376476-25] INFO  Pygmy - Query by Item request received for item: 1
+16:29:52.195 [qtp1371376476-25] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:52.197 [qtp1371376476-20] INFO  Pygmy - Query by Item request received for item: 2
+16:29:52.197 [qtp1371376476-20] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:52.205 [qtp1371376476-18] INFO  Pygmy - Restock update request received for item: 2
+16:29:52.205 [qtp1371376476-18] INFO  Pygmy - Restocking book - 2
+16:29:52.206 [qtp1371376476-18] INFO  Pygmy - Update response time in milliseconds : 1
+16:29:53.226 [qtp1371376476-13] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:53.226 [qtp1371376476-13] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:53.227 [qtp1371376476-19] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:53.228 [qtp1371376476-19] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:53.231 [qtp1371376476-25] INFO  Pygmy - Query by Item request received for item: 4
+16:29:53.231 [qtp1371376476-25] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:53.237 [qtp1371376476-20] INFO  Pygmy - Buy update request received for item: 4
+16:29:53.238 [qtp1371376476-18] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:53.238 [qtp1371376476-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:53.239 [qtp1371376476-20] INFO  Pygmy - Update response time in milliseconds : 1
+16:29:54.255 [qtp1371376476-27] INFO  Pygmy - Query by Item request received for item: 4
+16:29:54.255 [qtp1371376476-27] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:54.268 [qtp1371376476-19] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:54.268 [qtp1371376476-19] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:54.269 [qtp1371376476-25] INFO  Pygmy - Query by Item request received for item: 2
+16:29:54.269 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 3
+16:29:54.270 [qtp1371376476-25] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:54.270 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:55.281 [qtp1371376476-20] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:55.281 [qtp1371376476-20] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:55.289 [qtp1371376476-27] INFO  Pygmy - Query by Item request received for item: 2
+16:29:55.289 [qtp1371376476-27] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:55.303 [qtp1371376476-19] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:55.303 [qtp1371376476-19] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:55.307 [qtp1371376476-18] INFO  Pygmy - Query by Item request received for item: 1
+16:29:55.308 [qtp1371376476-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:55.312 [qtp1371376476-13] INFO  Pygmy - Buy update request received for item: 1
+16:29:55.314 [qtp1371376476-13] INFO  Pygmy - Update response time in milliseconds : 2
+16:29:56.330 [qtp1371376476-27] INFO  Pygmy - Query by Item request received for item: 3
+16:29:56.330 [qtp1371376476-27] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:56.333 [qtp1371376476-18] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:56.333 [qtp1371376476-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:56.335 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 2
+16:29:56.335 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:56.343 [qtp1371376476-25] INFO  Pygmy - Buy update request received for item: 2
+16:29:56.344 [qtp1371376476-25] INFO  Pygmy - Update response time in milliseconds : 1
+16:29:56.347 [qtp1371376476-19] INFO  Pygmy - Query by Item request received for item: 1
+16:29:56.347 [qtp1371376476-19] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:56.353 [qtp1371376476-27] INFO  Pygmy - Restock update request received for item: 1
+16:29:56.353 [qtp1371376476-27] INFO  Pygmy - Restocking book - 1
+16:29:56.354 [qtp1371376476-27] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:57.363 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 2
+16:29:57.364 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:57.364 [qtp1371376476-20] INFO  Pygmy - Query by Item request received for item: 1
+16:29:57.364 [qtp1371376476-20] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:57.367 [qtp1371376476-18] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:57.367 [qtp1371376476-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:57.380 [qtp1371376476-25] INFO  Pygmy - Query by Item request received for item: 3
+16:29:57.380 [qtp1371376476-25] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:57.384 [qtp1371376476-19] INFO  Pygmy - Buy update request received for item: 3
+16:29:57.384 [qtp1371376476-19] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:58.397 [qtp1371376476-27] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:58.397 [qtp1371376476-27] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:58.401 [qtp1371376476-18] INFO  Pygmy - Query by Item request received for item: 3
+16:29:58.401 [qtp1371376476-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:58.401 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 4
+16:29:58.401 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:58.407 [qtp1371376476-25] INFO  Pygmy - Buy update request received for item: 3
+16:29:58.407 [qtp1371376476-19] INFO  Pygmy - Buy update request received for item: 4
+16:29:58.408 [qtp1371376476-25] INFO  Pygmy - Update response time in milliseconds : 0
+16:29:58.408 [qtp1371376476-19] INFO  Pygmy - Update response time in milliseconds : 1
+16:29:58.413 [qtp1371376476-27] INFO  Pygmy - Query by Item request received for item: 4
+16:29:58.413 [qtp1371376476-27] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:59.425 [qtp1371376476-20] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:29:59.425 [qtp1371376476-20] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:59.435 [qtp1371376476-18] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:59.435 [qtp1371376476-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:59.436 [qtp1371376476-13] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:29:59.436 [qtp1371376476-13] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:29:59.439 [qtp1371376476-19] INFO  Pygmy - Query by Item request received for item: 4
+16:29:59.440 [qtp1371376476-19] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:29:59.445 [qtp1371376476-27] INFO  Pygmy - Buy update request received for item: 4
+16:29:59.446 [qtp1371376476-27] INFO  Pygmy - Update response time in milliseconds : 0
+16:30:00.467 [qtp1371376476-25] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:30:00.467 [qtp1371376476-25] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:30:00.470 [qtp1371376476-20] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+16:30:00.471 [qtp1371376476-20] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:30:00.474 [qtp1371376476-19] INFO  Pygmy - Query by Item request received for item: 3
+16:30:00.474 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 4
+16:30:00.474 [qtp1371376476-19] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:30:00.474 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:30:00.479 [qtp1371376476-27] INFO  Pygmy - Buy update request received for item: 3
+16:30:00.481 [qtp1371376476-27] INFO  Pygmy - Update response time in milliseconds : 1
+16:30:01.507 [qtp1371376476-25] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:30:01.507 [qtp1371376476-25] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:30:01.509 [qtp1371376476-18] INFO  Pygmy - Query by Item request received for item: 2
+16:30:01.509 [qtp1371376476-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:30:01.509 [qtp1371376476-20] INFO  Pygmy - Query by Item request received for item: 2
+16:30:01.509 [qtp1371376476-20] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:30:01.514 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 4
+16:30:01.514 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:30:01.515 [qtp1371376476-27] INFO  Pygmy - Buy update request received for item: 2
+16:30:01.515 [qtp1371376476-25] INFO  Pygmy - Buy update request received for item: 2
+16:30:01.516 [qtp1371376476-27] INFO  Pygmy - Update response time in milliseconds : 0
+16:30:01.516 [qtp1371376476-25] INFO  Pygmy - Update response time in milliseconds : 0
+16:30:01.519 [qtp1371376476-19] INFO  Pygmy - Restock update request received for item: 4
+16:30:01.519 [qtp1371376476-19] INFO  Pygmy - Restocking book - 4
+16:30:01.520 [qtp1371376476-19] INFO  Pygmy - Update response time in milliseconds : 0
+16:30:02.551 [qtp1371376476-20] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:30:02.551 [qtp1371376476-20] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:30:02.551 [qtp1371376476-18] INFO  Pygmy - Query by Item request received for item: 3
+16:30:02.551 [qtp1371376476-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:30:02.556 [qtp1371376476-25] INFO  Pygmy - Query by Item request received for item: 2
+16:30:02.556 [qtp1371376476-13] INFO  Pygmy - Query by Item request received for item: 2
+16:30:02.556 [qtp1371376476-25] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:30:02.556 [qtp1371376476-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:30:02.564 [qtp1371376476-27] INFO  Pygmy - Buy update request received for item: 2
+16:30:02.564 [qtp1371376476-19] INFO  Pygmy - Buy update request received for item: 2
+16:30:02.565 [qtp1371376476-27] INFO  Pygmy - Update response time in milliseconds : 0
+16:30:02.566 [qtp1371376476-19] INFO  Pygmy - Update response time in milliseconds : 1
+16:30:03.592 [qtp1371376476-25] INFO  Pygmy - Query by Item request received for item: 3
+16:30:03.592 [qtp1371376476-25] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:30:03.592 [qtp1371376476-19] INFO  Pygmy - Query by Subject request received for topic: graduate school
+16:30:03.592 [qtp1371376476-19] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+16:30:03.593 [qtp1371376476-18] INFO  Pygmy - Query by Item request received for item: 2
+16:30:03.593 [qtp1371376476-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:30:03.599 [qtp1371376476-27] INFO  Pygmy - Restock update request received for item: 2
+16:30:03.600 [qtp1371376476-27] INFO  Pygmy - Restocking book - 2
+16:30:03.600 [qtp1371376476-20] INFO  Pygmy - Query by Item request received for item: 4
+16:30:03.600 [qtp1371376476-20] INFO  Pygmy - Query by Item response time in milliseconds : 0
+16:30:03.601 [qtp1371376476-27] INFO  Pygmy - Update response time in milliseconds : 1
+16:30:03.957 [Thread-8] INFO  ninja.lifecycle.LifecycleServiceImpl - Stopping Ninja application...
+16:30:03.958 [Thread-8] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application stopped in 1ms
+16:30:03.958 [Thread-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@fb5d334{/,null,UNAVAILABLE}
+16:30:03.958 [Thread-8] INFO  ninja.standalone.NinjaJetty - Trying to stop jetty on <all>:8081
+16:30:03.975 [Thread-8] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@57576994{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+16:30:03.976 [Thread-8] INFO  ninja.standalone.NinjaJetty - Stopped jetty on <all>:8081
