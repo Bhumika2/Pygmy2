@@ -4,15 +4,14 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import models.CatalogResponse;
+import models.OrderResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.net.URI;
-import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.List;
 import com.google.inject.Inject;
@@ -30,16 +29,15 @@ public class Catalog {
      */
     @Inject
     NinjaProperties ninjaProperties;
-    public List<CatalogResponse> searchTopic(String topic) {
+    public List<CatalogResponse> searchTopic(String topic, String host, String port){
         List<CatalogResponse> catalogResponse = null;
         try {
             logger.info("Calling Catalog microservice");
             ObjectMapper objectMapper = new ObjectMapper();
             HttpClient client = HttpClient.newHttpClient();
-            String serverName = ninjaProperties.get("catalogHost")+":"+ninjaProperties.get("catalogPort");
-            String restUrl = URLEncoder.encode(topic, StandardCharsets.UTF_8.toString());
+            String serverName = host + ":" + port;
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create("http://"+serverName+"/queryBySubject/" + restUrl))
+                    .uri(URI.create("http://" + serverName + "/queryBySubject/" + topic))
                     .timeout(Duration.ofMinutes(1))
                     .header("Content-Type", "application/json")
                     .GET()
@@ -54,7 +52,7 @@ public class Catalog {
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
             String json = mapper.writeValueAsString(catalogResponse);
             logger.info("Response for search request: " + json);
-        } catch (Exception e) {
+        } catch (Exception e){
             logger.info(String.valueOf(e.getStackTrace()));
         }
         return catalogResponse;
@@ -64,16 +62,16 @@ public class Catalog {
      * lookupBook makes a http get request to catalog server to get the book information.
      * It is invoked from application controller and returns book information response from catalog server
      */
-    public CatalogResponse lookupBook(Integer bookNumber) {
+    public CatalogResponse lookupBook(Integer bookNumber,String host, String port) {
         CatalogResponse catalogResponse = null;
         try {
             logger.info("Calling Catalog microservice");
             ObjectMapper objectMapper = new ObjectMapper();
             //String catalogReqStr = objectMapper.writeValueAsString(catalogRequest);
             HttpClient client = HttpClient.newHttpClient();
-            String serverName = ninjaProperties.get("catalogHost")+":"+ninjaProperties.get("catalogPort");
+            String serverName = host + ":" + port;
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create("http://"+serverName+"/queryByItem/" + bookNumber))
+                    .uri(URI.create("http://" + serverName + "/queryByItem/" + bookNumber))
                     .timeout(Duration.ofMinutes(1))
                     .header("Content-Type", "application/json")
                     .GET()

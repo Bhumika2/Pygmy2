@@ -28,6 +28,7 @@ public class Routes implements ApplicationRoutes {
     public void init(Router router) {
         router.GET().route("/search/{topic}").with(ApplicationController::search);
         router.GET().route("/lookup/{bookNumber}").with(ApplicationController::lookup);
+        router.POST().route("/invalidate/{bookNumber}").with(ApplicationController::invalidate);
         router.POST().route("/buy/{bookNumber}").with(ApplicationController::buy);
     }
 
