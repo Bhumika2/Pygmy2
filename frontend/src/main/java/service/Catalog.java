@@ -3,8 +3,9 @@ package service;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.google.inject.Inject;
 import models.CatalogResponse;
-import models.OrderResponse;
+import ninja.utils.NinjaProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,8 +15,6 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
 import java.util.List;
-import com.google.inject.Inject;
-import ninja.utils.NinjaProperties;
 
 public class Catalog {
 

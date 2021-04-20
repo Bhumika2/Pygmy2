@@ -46,6 +46,7 @@
 
 package controllers;
 
+import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import models.CatalogResponse;
 import models.OrderRequest;
@@ -53,12 +54,11 @@ import models.OrderResponse;
 import ninja.Result;
 import ninja.Results;
 import ninja.params.PathParam;
+import ninja.utils.NinjaProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import service.Catalog;
 import service.Order;
-import com.google.inject.Inject;
-import ninja.utils.NinjaProperties;
 
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
@@ -167,15 +167,20 @@ public class ApplicationController {
      * It is invoked from application controller and invoked from order server on successful buy request
      */
     public OrderResponse invalidateCacheEntry(int bookNumber){
-        OrderResponse orderResponse = null;
-        CatalogResponse lookupCacheEntry = lookupCache.get(bookNumber);
-        List<CatalogResponse> searchCacheEntry = searchCache.get(lookupCacheEntry.getTopic());
-        if(lookupCacheEntry!=null)
-            lookupCache.remove(bookNumber);
-        if(searchCacheEntry!=null)
-            searchCache.remove(lookupCacheEntry.getTopic());
-        orderResponse.setBookNumber(bookNumber);
-        orderResponse.setMessage("Cache Entry Invalidated");
+        OrderResponse orderResponse = new OrderResponse();
+        try {
+            CatalogResponse lookupCacheEntry = lookupCache.get(bookNumber);
+            if (lookupCacheEntry != null) {
+                List<CatalogResponse> searchCacheEntry = searchCache.get(lookupCacheEntry.getTopic());
+                lookupCache.remove(bookNumber);
+                if (searchCacheEntry != null)
+                    searchCache.remove(lookupCacheEntry.getTopic());
+            }
+            orderResponse.setBookNumber(bookNumber);
+            orderResponse.setMessage("Cache Entry Invalidated");
+        } catch (Exception e){
+            logger.info(e.getMessage());
+        }
         return orderResponse;
     }
 
