@@ -52,7 +52,7 @@ public class Order {
             String json = mapper.writeValueAsString(orderResponse);
             logger.info("Response for buy request: " + json);
         } catch (Exception e) {
-            logger.info(String.valueOf(e.getStackTrace()));
+            logger.info(e.getMessage());
         }
         return orderResponse;
     }

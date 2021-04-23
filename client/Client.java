@@ -32,7 +32,8 @@ public class Client {
                 return;
             }
 
-            String frontendHostName = prop.getProperty("frontendHost");
+            //String frontendHostName = prop.getProperty("frontendHost");
+            String frontendHostName = "localhost";
 
             while (true) {
                 String action = getRandomAction();

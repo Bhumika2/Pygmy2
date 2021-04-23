@@ -5,4 +5,4 @@ ARG PORT
 ENV PORT $PORT
 ARG SERVER
 ENV SERVER $SERVER
-CMD mvn ninja:run -Dninja.port=$PORT -Dninja.jvmArgs="-Dninja.external.configuration=conf/hostname.conf  -Dserver.name=$SERVER"
+CMD mvn clean install && mvn ninja:run -Dninja.port=$PORT -Dninja.jvmArgs="-Dninja.external.configuration=conf/hostname.conf  -Dserver.name=$SERVER"

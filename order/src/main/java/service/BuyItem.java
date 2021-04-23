@@ -71,7 +71,7 @@ public class BuyItem {
             ObjectMapper mapper = new ObjectMapper();
             book = mapper.readValue(response.body().toString(), Book.class);
         } catch (Exception e) {
-            logger.info(String.valueOf(e.getStackTrace()));
+            logger.info(e.getMessage());
         }
         return book;
     }
@@ -102,7 +102,7 @@ public class BuyItem {
                 buyStatus = true;
             }
         } catch (Exception e) {
-            logger.info(String.valueOf(e.getStackTrace()));
+            logger.info(e.getMessage());
         }
         return buyStatus;
     }
@@ -126,7 +126,7 @@ public class BuyItem {
                 logger.info("Non 200 response code received from catalog server: " + response.statusCode());
             }
         } catch (Exception e) {
-            logger.info(String.valueOf(e.getStackTrace()));
+            logger.info(e.getMessage());
         }
     }
 

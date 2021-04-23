@@ -1,7 +1,7 @@
 <configuration>
 
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>logs/catalog.log</file>
+        <file>logs/catalog${server.name}.log</file>
         <append>true</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
