@@ -112,11 +112,13 @@ public class ApplicationController {
                 catalogResponse = catalog.searchTopic(topic, ninjaProperties.get("catalogReplicaHost"), ninjaProperties.get("catalogReplicaPort"));
             this.catalogSwitch = !this.catalogSwitch;
 
-            if(searchCache.size() == CACHE_SIZE){
-                String LRUKey = searchCache.entrySet().iterator().next().getKey();
-                searchCache.remove(LRUKey);
+            if(catalogResponse != null) {
+                if (searchCache.size() == CACHE_SIZE) {
+                    String LRUKey = searchCache.entrySet().iterator().next().getKey();
+                    searchCache.remove(LRUKey);
+                }
+                searchCache.put(key, catalogResponse);
             }
-            searchCache.put(key,catalogResponse);
         }
         long timeElapsed = System.nanoTime() - startTime;
         logger.info("Search response time in milliseconds : " + timeElapsed / 1000000);
@@ -146,11 +148,13 @@ public class ApplicationController {
                 catalogResponse = catalog.lookupBook(bookNumber, ninjaProperties.get("catalogReplicaHost"), ninjaProperties.get("catalogReplicaPort"));
             this.catalogSwitch = !this.catalogSwitch;
 
-            if(lookupCache.size() == CACHE_SIZE){
-                Integer LRUKey = lookupCache.entrySet().iterator().next().getKey();
-                lookupCache.remove(LRUKey);
+            if(catalogResponse!=null) {
+                if (lookupCache.size() == CACHE_SIZE) {
+                    Integer LRUKey = lookupCache.entrySet().iterator().next().getKey();
+                    lookupCache.remove(LRUKey);
+                }
+                lookupCache.put(bookNumber, catalogResponse);
             }
-            lookupCache.put(bookNumber,catalogResponse);
         }
         long timeElapsed = System.nanoTime() - startTime;
         logger.info("Lookup response time in milliseconds : " + timeElapsed / 1000000);

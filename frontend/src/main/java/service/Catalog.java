@@ -52,7 +52,7 @@ public class Catalog {
             String json = mapper.writeValueAsString(catalogResponse);
             logger.info("Response for search request: " + json);
         } catch (Exception e){
-            logger.info(String.valueOf(e.getStackTrace()));
+            logger.info(e.getMessage());
         }
         return catalogResponse;
     }
@@ -62,6 +62,7 @@ public class Catalog {
      * It is invoked from application controller and returns book information response from catalog server
      */
     public CatalogResponse lookupBook(Integer bookNumber,String host, String port) {
+        logger.info("Host: "+host+" Port: "+port);
         CatalogResponse catalogResponse = null;
         try {
             logger.info("Calling Catalog microservice");
@@ -85,7 +86,7 @@ public class Catalog {
             String json = mapper.writeValueAsString(catalogResponse);
             logger.info("Response for lookup request: " + json);
         } catch (Exception e) {
-            logger.info(String.valueOf(e.getStackTrace()));
+            logger.info(String.valueOf(e.getMessage()));
         }
         return catalogResponse;
     }

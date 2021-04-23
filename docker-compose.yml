@@ -1,0 +1,70 @@
+version: '3.9'
+services:
+  frontend:
+    build: 
+      context: ./frontend
+      args:
+        PORT: 8080
+    container_name: frontend
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - catalog
+      - order
+      - catalogreplica
+      - orderreplica
+    volumes:
+      - ./logs:/usr/src/myapp/logs
+  catalog:
+    build:
+      context: ./catalog
+      args:
+        PORT: 8081
+        SERVER: 1
+    container_name: catalog
+    restart: always
+    ports:
+      - 8081:8081
+    volumes:
+      - ./logs:/usr/src/myapp/logs
+  order: 
+    build:
+      context: ./order
+      args:
+        PORT: 8082
+        SERVER: 1
+    container_name: order
+    restart: always
+    ports:
+      - 8082:8082
+    volumes:
+      - ./logs:/usr/src/myapp/logs
+    depends_on:
+      - catalog
+  catalogreplica:
+    build:
+      context: ./catalog
+      args:
+        PORT: 8083
+        SERVER: 2
+    container_name: catalogreplica
+    restart: always
+    ports:
+      - 8083:8083
+    volumes:
+      - ./logs:/usr/src/myapp/logs
+  orderreplica:
+    build:
+      context: ./order
+      args:
+        PORT: 8084
+        SERVER: 2
+    container_name: orderreplica
+    restart: always
+    ports:
+      - 8084:8084
+    volumes:
+      - ./logs:/usr/src/myapp/logs
+    depends_on:
+      - catalogreplica
