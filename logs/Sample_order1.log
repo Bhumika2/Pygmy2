@@ -1,0 +1,109 @@
+23:34:16.152 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode dev
+23:34:16.243 [NinjaJetty] INFO  org.eclipse.jetty.util.log - Logging initialized @590ms to org.eclipse.jetty.util.log.Slf4jLog
+23:34:16.289 [NinjaJetty] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+23:34:16.355 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.35.v20201120 on <all>:8082
+23:34:16.356 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.10+9
+23:34:16.393 [NinjaJetty] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@5ba88be8{STARTED}
+23:34:16.409 [NinjaJetty] INFO  ninja.Bootstrap - Successfully configured Logback.
+23:34:16.411 [NinjaJetty] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+23:34:17.046 [NinjaJetty] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+23:34:17.047 [NinjaJetty] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+23:34:17.085 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+23:34:17.086 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+23:34:17.087 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+23:34:17.088 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+23:34:17.088 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+23:34:17.089 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+23:34:17.090 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+23:34:17.090 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+23:34:17.097 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+23:34:17.098 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+23:34:17.099 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+23:34:17.100 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+23:34:17.100 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+23:34:17.101 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+23:34:17.101 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+23:34:17.103 [NinjaJetty] INFO  ninja.Bootstrap - Ninja injector started in 690 ms.
+23:34:17.114 [NinjaJetty] WARN  ninja.params.ControllerMethodInvoker - Using deprecated non-strict mode for injection of parameters into controller (ninja.strict_argument_extractors = false). This mode will soon be removed from Ninja. Make sure you upgrade your application as soon as possible. More: https://www.ninjaframework.org/documentation/basic_concepts/controllers.html 'A note about null and Optional'.
+23:34:17.116 [NinjaJetty] INFO  ninja.RouterImpl - ------------------------------------------------
+23:34:17.117 [NinjaJetty] INFO  ninja.RouterImpl - Registered routes
+23:34:17.117 [NinjaJetty] INFO  ninja.RouterImpl - ------------------------------------------------
+23:34:17.120 [NinjaJetty] INFO  ninja.RouterImpl - POST /buy  =>  controllers.ApplicationController::buy
+23:34:17.121 [NinjaJetty] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  https://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.8.1
+
+23:34:17.123 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+23:34:17.127 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 4ms
+23:34:17.131 [NinjaJetty] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1e9d7366{/,null,AVAILABLE}
+23:34:17.160 [NinjaJetty] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@76a4ebf2{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+23:34:17.161 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - Started @1510ms
+23:34:17.162 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.35.v20201120 on <all>:8082
+23:34:17.163 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+23:34:17.164 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+23:34:17.166 [NinjaJetty] INFO  ninja.standalone.NinjaJetty -  => http://localhost:8082
+23:34:17.166 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+23:34:37.410 [qtp2122049087-12] INFO  Pygmy - Buy request received for book: 1
+23:34:37.414 [qtp2122049087-12] INFO  Pygmy - Checking availability of book: 1
+23:34:37.614 [qtp2122049087-12] INFO  Pygmy - Initiating restock request for book: 1
+23:34:38.025 [qtp2122049087-12] INFO  Pygmy - Buy response time in milliseconds : 611
+23:34:39.889 [qtp2122049087-11] INFO  Pygmy - Buy request received for book: 1
+23:34:39.891 [qtp2122049087-11] INFO  Pygmy - Checking availability of book: 1
+23:34:39.910 [qtp2122049087-11] INFO  Pygmy - Initiating buy request for book: 1
+23:34:39.944 [qtp2122049087-11] INFO  Pygmy - Buy response time in milliseconds : 53
+23:34:47.027 [qtp2122049087-16] INFO  Pygmy - Buy request received for book: 3
+23:34:47.029 [qtp2122049087-16] INFO  Pygmy - Checking availability of book: 3
+23:34:47.048 [qtp2122049087-16] INFO  Pygmy - Initiating buy request for book: 3
+23:34:47.088 [qtp2122049087-16] INFO  Pygmy - Buy response time in milliseconds : 58
+23:34:48.433 [qtp2122049087-15] INFO  Pygmy - Buy request received for book: 4
+23:34:48.435 [qtp2122049087-15] INFO  Pygmy - Checking availability of book: 4
+23:34:48.453 [qtp2122049087-15] INFO  Pygmy - Initiating buy request for book: 4
+23:34:48.490 [qtp2122049087-15] INFO  Pygmy - Buy response time in milliseconds : 54
+23:34:53.436 [qtp2122049087-14] INFO  Pygmy - Buy request received for book: 1
+23:34:53.439 [qtp2122049087-14] INFO  Pygmy - Checking availability of book: 1
+23:34:53.457 [qtp2122049087-14] INFO  Pygmy - Initiating buy request for book: 1
+23:34:53.494 [qtp2122049087-14] INFO  Pygmy - Buy response time in milliseconds : 55
+23:35:03.999 [qtp2122049087-12] INFO  Pygmy - Buy request received for book: 4
+23:35:04.002 [qtp2122049087-12] INFO  Pygmy - Checking availability of book: 4
+23:35:04.019 [qtp2122049087-12] INFO  Pygmy - Initiating buy request for book: 4
+23:35:04.059 [qtp2122049087-12] INFO  Pygmy - Buy response time in milliseconds : 56
+23:35:11.395 [qtp2122049087-12] INFO  Pygmy - Buy request received for book: 4
+23:35:11.397 [qtp2122049087-12] INFO  Pygmy - Checking availability of book: 4
+23:35:11.411 [qtp2122049087-12] INFO  Pygmy - Initiating buy request for book: 4
+23:35:11.441 [qtp2122049087-12] INFO  Pygmy - Buy response time in milliseconds : 43
+23:35:20.877 [qtp2122049087-15] INFO  Pygmy - Buy request received for book: 4
+23:35:20.878 [qtp2122049087-15] INFO  Pygmy - Checking availability of book: 4
+23:35:20.888 [qtp2122049087-15] INFO  Pygmy - Initiating restock request for book: 4
+23:35:20.924 [qtp2122049087-15] INFO  Pygmy - Buy response time in milliseconds : 45
+23:35:26.021 [qtp2122049087-14] INFO  Pygmy - Buy request received for book: 1
+23:35:26.024 [qtp2122049087-14] INFO  Pygmy - Checking availability of book: 1
+23:35:26.043 [qtp2122049087-14] INFO  Pygmy - Initiating buy request for book: 1
+23:35:26.081 [qtp2122049087-14] INFO  Pygmy - Buy response time in milliseconds : 58
+23:35:28.229 [qtp2122049087-14] INFO  Pygmy - Buy request received for book: 1
+23:35:28.231 [qtp2122049087-14] INFO  Pygmy - Checking availability of book: 1
+23:35:28.237 [qtp2122049087-15] INFO  Pygmy - Buy request received for book: 1
+23:35:28.238 [qtp2122049087-15] INFO  Pygmy - Checking availability of book: 1
+23:35:28.250 [qtp2122049087-14] INFO  Pygmy - Initiating buy request for book: 1
+23:35:28.263 [qtp2122049087-15] INFO  Pygmy - Initiating buy request for book: 1
+23:35:28.297 [qtp2122049087-14] INFO  Pygmy - Buy response time in milliseconds : 65
+23:35:28.310 [qtp2122049087-15] INFO  Pygmy - Buy response time in milliseconds : 71
+23:35:31.434 [qtp2122049087-12] INFO  Pygmy - Buy request received for book: 1
+23:35:31.436 [qtp2122049087-12] INFO  Pygmy - Checking availability of book: 1
+23:35:31.450 [qtp2122049087-11] INFO  Pygmy - Buy request received for book: 1
+23:35:31.451 [qtp2122049087-11] INFO  Pygmy - Checking availability of book: 1
+23:35:31.455 [qtp2122049087-12] INFO  Pygmy - Initiating buy request for book: 1
+23:35:31.472 [qtp2122049087-11] INFO  Pygmy - Initiating buy request for book: 1
+23:35:31.484 [qtp2122049087-11] INFO  Pygmy - Buy response time in milliseconds : 32
+23:35:31.503 [qtp2122049087-12] INFO  Pygmy - Buy response time in milliseconds : 67
+23:35:32.538 [qtp2122049087-15] INFO  Pygmy - Buy request received for book: 4
+23:35:32.540 [qtp2122049087-15] INFO  Pygmy - Checking availability of book: 4
+23:35:32.558 [qtp2122049087-15] INFO  Pygmy - Initiating buy request for book: 4
+23:35:32.597 [qtp2122049087-15] INFO  Pygmy - Buy response time in milliseconds : 57
+23:35:35.688 [qtp2122049087-14] INFO  Pygmy - Buy request received for book: 4
+23:35:35.691 [qtp2122049087-14] INFO  Pygmy - Checking availability of book: 4
+23:35:35.711 [qtp2122049087-14] INFO  Pygmy - Initiating buy request for book: 4
+23:35:35.742 [qtp2122049087-14] INFO  Pygmy - Buy response time in milliseconds : 51
