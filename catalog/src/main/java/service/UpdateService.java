@@ -46,6 +46,7 @@ public class UpdateService {
                 }
             }
             if (message.equals("success")) {
+                logger.info("Updating inventory of item " + id);
                 updateDB(QueryService.getBookMap().get(id).getBookNumber());
             }
         }

@@ -88,10 +88,10 @@ public class ApplicationController {
         logger.info(type + " update request received for item: " + id);
         long startTime = System.nanoTime();
         UpdateService updateService = new UpdateService(ninjaProperties);
+        updateService.frontendCacheInvalidate(id);
         UpdateResponse updateRes = updateService.updateInventory(id, type);
         //TODO: check if lock required here
         if (updateRes.getMessage().equals("success")) {
-            updateService.frontendCacheInvalidate(id);
             updateService.syncReplica(id, type, 0);
         }
         long timeElapsed = System.nanoTime() - startTime;
