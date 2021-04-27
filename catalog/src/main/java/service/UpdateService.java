@@ -1,6 +1,9 @@
 package service;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.inject.Inject;
+import models.Book;
 import models.UpdateResponse;
 import ninja.utils.NinjaProperties;
 import org.slf4j.Logger;
@@ -10,8 +13,10 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.time.Duration;
+import java.util.List;
 
 public class UpdateService {
 
@@ -168,7 +173,7 @@ public class UpdateService {
      * getCatalogServer return the ip and port of the other catalog server
      *
      */
-    private String getCatalogServer() {
+    public String getCatalogServer() {
         String serverName = System.getProperty("server.name");
         switch (serverName) {
             case "1":
@@ -177,5 +182,34 @@ public class UpdateService {
                 return ninjaProperties.get("catalogHost") + ":" + ninjaProperties.get("catalogPort");
         }
         return "";
+    }
+
+
+    public void updateDB(){
+        logger.info("Re-syncing DB across replica");
+        try {
+            HttpClient client = HttpClient.newHttpClient();
+            String catalogServer = getCatalogServer();
+            ObjectMapper objectMapper = new ObjectMapper();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create("http://" + catalogServer + "/resyncDB"))
+                    .timeout(Duration.ofMinutes(1))
+                    .header("Content-Type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.noBody())
+                    .build();
+            HttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            if (response.statusCode() != 200) {
+                logger.info("Non 200 response code received from catalog server for resync: " + response.statusCode());
+            } else {
+                logger.info("Updating DB for resync");
+                Statement statement = DBService.getConnection().createStatement();
+                List<Book> bookList= objectMapper.readValue(response.body().toString(), new TypeReference<List<Book>>(){});
+                for(Book book: bookList){
+                    statement.executeUpdate("update book set cost = " + book.getCost() + ", count = " + book.getCount() + " where book_number = " + book.getBookNumber());
+                }
+            }
+        } catch (Exception e) {
+            logger.info(e.getMessage());
+        }
     }
 }

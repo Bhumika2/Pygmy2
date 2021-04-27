@@ -27,12 +27,16 @@ import ninja.params.PathParam;
 import ninja.utils.NinjaProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import service.DBService;
+import service.HeartBeatService;
 import service.QueryService;
 import service.UpdateService;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,13 +44,16 @@ import java.util.List;
 @Singleton
 public class ApplicationController {
 
-    @Inject
-    NinjaProperties ninjaProperties;
-
     Logger logger = LoggerFactory.getLogger("Pygmy");
 
-    public ApplicationController() {
-        QueryService.getAllBooks();
+    NinjaProperties ninjaProperties;
+
+    @Inject
+    public ApplicationController(NinjaProperties ninjaProperties) {
+        this.ninjaProperties = ninjaProperties;
+        HeartBeatService hb = new HeartBeatService(ninjaProperties);
+        hb.start();
+        QueryService.getAllBooks(ninjaProperties);
     }
 
     /**
@@ -135,6 +142,32 @@ public class ApplicationController {
                 break;
         }
         return Results.json().render("success");
+    }
+
+    /**
+     * resyncDB fetch the DB data from replica during recovery
+     */
+    public Result resyncDB() {
+        logger.info("Re-Syncing DB");
+        Statement statement = null;
+        ResultSet rs = null;
+        List<Book> bookList = null;
+        try {
+            statement = DBService.getConnection().createStatement();
+            statement.setQueryTimeout(30);
+            rs = statement.executeQuery("select * from book");
+            bookList = new ArrayList<>();
+            while (rs.next()) {
+                Book book = new Book(rs.getInt("book_number"), rs.getString("book_name"),
+                        rs.getString("topic"), rs.getInt("cost"), rs.getInt("count"));
+                System.out.println(book.getBookName());
+                bookList.add(book);
+            }
+            System.out.println(bookList);
+        }catch(Exception e){
+            logger.info(e.getMessage());
+        }
+        return Results.json().render(bookList);
     }
 
 

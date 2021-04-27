@@ -56,18 +56,25 @@ import ninja.utils.NinjaProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import service.BuyItem;
+import service.HeartBeatService;
 
 
 @Singleton
 public class ApplicationController {
     Logger logger = LoggerFactory.getLogger("Pygmy");
 
+    NinjaProperties ninjaProperties;
+
+    @Inject
+    public ApplicationController(NinjaProperties ninjaProperties) {
+        this.ninjaProperties = ninjaProperties;
+        HeartBeatService hb = new HeartBeatService(ninjaProperties);
+        hb.start();
+    }
     /**
      * buy serves the buy http requests from frontend server. It invokes the buy method from BuyItem class under service package
      * returns the message of purchase status
      */
-    @Inject
-    NinjaProperties ninjaProperties;
     public Result buy(BuyRequest buyObj) {
         logger.info("Buy request received for book: " + buyObj.getBookNumber());
         long startTime = System.nanoTime();

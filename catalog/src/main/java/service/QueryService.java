@@ -1,11 +1,17 @@
 package service;
 
 import models.Book;
+import ninja.utils.NinjaProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,8 +27,10 @@ public class QueryService {
     /**
      * getAllBooks fetches the book details from the database table and populates the hashmap
      */
-    public static void getAllBooks() {
+    public static void getAllBooks(NinjaProperties ninjaProperties) {
         try {
+            UpdateService updateService = new UpdateService();
+            updateService.updateDB();
             Statement statement = DBService.getConnection().createStatement();
             statement.setQueryTimeout(30);
 
