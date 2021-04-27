@@ -146,7 +146,7 @@ public class ApplicationController {
      * resyncDB fetch the DB data from replica during recovery
      */
     public Result resyncDB() {
-        logger.info("Re-Syncing DB");
+        logger.info("Re-Syncing DB request received");
         Statement statement = null;
         ResultSet rs = null;
         List<Book> bookList = null;

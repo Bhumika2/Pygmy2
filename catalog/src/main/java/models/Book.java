@@ -14,6 +14,7 @@ public class Book {
         this.cost = cost;
         this.count = count;
     }
+    public Book(){}
 
     public Integer getBookNumber() {
         return bookNumber;

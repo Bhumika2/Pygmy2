@@ -186,7 +186,7 @@ public class UpdateService {
 
 
     public void updateDB(){
-        logger.info("Re-syncing DB across replica");
+        logger.info("Sending request for re-syncing DB across replica");
         try {
             HttpClient client = HttpClient.newHttpClient();
             String catalogServer = getCatalogServer();
@@ -201,7 +201,7 @@ public class UpdateService {
             if (response.statusCode() != 200) {
                 logger.info("Non 200 response code received from catalog server for resync: " + response.statusCode());
             } else {
-                logger.info("Updating DB for resync");
+                logger.info("Updating DB for re-sync operation");
                 Statement statement = DBService.getConnection().createStatement();
                 List<Book> bookList= objectMapper.readValue(response.body().toString(), new TypeReference<List<Book>>(){});
                 for(Book book: bookList){

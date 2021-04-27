@@ -29,8 +29,11 @@ public class QueryService {
      */
     public static void getAllBooks(NinjaProperties ninjaProperties) {
         try {
+            logger.info("Starting to re-sync DB with replica");
             UpdateService updateService = new UpdateService(ninjaProperties);
             updateService.updateDB();
+            logger.info("Re-syncing DB with replica completed");
+
             Statement statement = DBService.getConnection().createStatement();
             statement.setQueryTimeout(30);
 
