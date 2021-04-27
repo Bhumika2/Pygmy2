@@ -51,8 +51,6 @@ public class ApplicationController {
     @Inject
     public ApplicationController(NinjaProperties ninjaProperties) {
         this.ninjaProperties = ninjaProperties;
-        HeartBeatService hb = new HeartBeatService(ninjaProperties);
-        hb.start();
         QueryService.getAllBooks(ninjaProperties);
     }
 

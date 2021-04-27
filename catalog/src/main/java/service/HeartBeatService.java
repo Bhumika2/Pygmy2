@@ -1,5 +1,8 @@
 package service;
 
+import com.google.inject.Inject;
+import com.google.inject.Singleton;
+import ninja.scheduler.Schedule;
 import ninja.utils.NinjaProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,17 +12,17 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
-public class HeartBeatService extends Thread{
+@Singleton
+public class HeartBeatService{
     Logger logger = LoggerFactory.getLogger("Pygmy");
-    private NinjaProperties ninjaProperties;
-    public HeartBeatService(NinjaProperties ninjaProperties) {
-        this.ninjaProperties = ninjaProperties;
-    }
 
-    @Override
-    public void run(){
-        while(true){
+    @Inject
+    NinjaProperties ninjaProperties;
+
+    @Schedule(delay = 2, initialDelay = 0, timeUnit = TimeUnit.SECONDS)
+    public void sendHeartBeat(){
             try {
                 logger.info("Sending heartbeat message to frontend cache");
                 HttpClient client = HttpClient.newHttpClient();
@@ -32,10 +35,8 @@ public class HeartBeatService extends Thread{
                         .POST(HttpRequest.BodyPublishers.noBody())
                         .build();
                 client.send(request, HttpResponse.BodyHandlers.ofString());
-                Thread.sleep(20000);
             } catch (Exception e) {
                 logger.info(e.getMessage());
             }
-        }
     }
 }

@@ -68,8 +68,6 @@ public class ApplicationController {
     @Inject
     public ApplicationController(NinjaProperties ninjaProperties) {
         this.ninjaProperties = ninjaProperties;
-        HeartBeatService hb = new HeartBeatService(ninjaProperties);
-        hb.start();
     }
     /**
      * buy serves the buy http requests from frontend server. It invokes the buy method from BuyItem class under service package
