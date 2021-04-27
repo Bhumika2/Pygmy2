@@ -18,15 +18,17 @@ import java.time.Duration;
 public class Order {
 
     Logger logger = LoggerFactory.getLogger("Pygmy");
-    public Order(NinjaProperties ninjaProperties){
-        this.ninjaProperties = ninjaProperties;
-    }
     /**
      * buyBook makes a http post request to order server to buy the book.
      * It is invoked from application controller and returns message about the purchase status
      */
     @Inject
     NinjaProperties ninjaProperties;
+
+    public Order(NinjaProperties ninjaProperties) {
+        this.ninjaProperties = ninjaProperties;
+    }
+
     public OrderResponse buyBook(OrderRequest orderReq, String host, String port) {
         OrderResponse orderResponse = null;
         try {
@@ -34,10 +36,10 @@ public class Order {
             ObjectMapper objectMapper = new ObjectMapper();
             String orderReqStr = objectMapper.writeValueAsString(orderReq);
             HttpClient client = HttpClient.newHttpClient();
-            String serverName = host +":"+port;
+            String serverName = host + ":" + port;
 
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create("http://"+serverName+"/buy"))
+                    .uri(URI.create("http://" + serverName + "/buy"))
                     .timeout(Duration.ofMinutes(1))
                     .header("Content-Type", "application/json")
                     .POST(HttpRequest.BodyPublishers.ofString(orderReqStr))
@@ -45,6 +47,7 @@ public class Order {
             HttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());
             if (response.statusCode() != 200) {
                 logger.info("Non 200 response code received from order server: " + response.statusCode());
+                return null;
             }
             orderResponse = objectMapper.readValue(response.body().toString(), OrderResponse.class);
             ObjectMapper mapper = new ObjectMapper();

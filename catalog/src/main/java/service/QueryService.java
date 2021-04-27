@@ -29,7 +29,7 @@ public class QueryService {
      */
     public static void getAllBooks(NinjaProperties ninjaProperties) {
         try {
-            UpdateService updateService = new UpdateService();
+            UpdateService updateService = new UpdateService(ninjaProperties);
             updateService.updateDB();
             Statement statement = DBService.getConnection().createStatement();
             statement.setQueryTimeout(30);

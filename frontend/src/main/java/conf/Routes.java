@@ -30,6 +30,7 @@ public class Routes implements ApplicationRoutes {
         router.GET().route("/lookup/{bookNumber}").with(ApplicationController::lookup);
         router.POST().route("/invalidate/{bookNumber}").with(ApplicationController::invalidate);
         router.POST().route("/buy/{bookNumber}").with(ApplicationController::buy);
+        router.POST().route("/heartbeat/{serverName}").with(ApplicationController::heartbeat);
     }
 
 }

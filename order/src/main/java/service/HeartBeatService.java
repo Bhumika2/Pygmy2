@@ -5,7 +5,7 @@ import ninja.scheduler.Schedule;
 import ninja.utils.NinjaProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import com.google.inject.Singleton;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -13,7 +13,8 @@ import java.net.http.HttpResponse;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-public class HeartBeatService extends Thread{
+@Singleton
+public class HeartBeatService{
     Logger logger = LoggerFactory.getLogger("Pygmy");
 
     @Inject

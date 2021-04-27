@@ -195,7 +195,7 @@ public class UpdateService {
                     .uri(URI.create("http://" + catalogServer + "/resyncDB"))
                     .timeout(Duration.ofMinutes(1))
                     .header("Content-Type", "application/json")
-                    .POST(HttpRequest.BodyPublishers.noBody())
+                    .GET()
                     .build();
             HttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());
             if (response.statusCode() != 200) {
