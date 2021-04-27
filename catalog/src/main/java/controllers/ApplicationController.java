@@ -158,10 +158,8 @@ public class ApplicationController {
             while (rs.next()) {
                 Book book = new Book(rs.getInt("book_number"), rs.getString("book_name"),
                         rs.getString("topic"), rs.getInt("cost"), rs.getInt("count"));
-                System.out.println(book.getBookName());
                 bookList.add(book);
             }
-            System.out.println(bookList);
         }catch(Exception e){
             logger.info(e.getMessage());
         }
