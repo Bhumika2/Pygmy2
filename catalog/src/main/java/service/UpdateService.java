@@ -28,9 +28,6 @@ public class UpdateService {
         this.ninjaProperties = ninjaProperties;
     }
 
-    public UpdateService() {
-    }
-
     /**
      * updateInventory serves the http requests from order server to decrement the count of books upon successful buy
      * updates the book count in database table and in-memory hashmap
@@ -38,21 +35,21 @@ public class UpdateService {
     public UpdateResponse updateInventory(int id, String type) {
         String message = "failure";
         if (type.equals("Restock")) {
-            restockBook(QueryService.getBookMap().get(id).getBookNumber());
-            QueryService.getBookMap().get(id).setCount(5);
+            restockBook(QueryService.getBookMap(this.ninjaProperties).get(id).getBookNumber());
+            QueryService.getBookMap(this.ninjaProperties).get(id).setCount(5);
             message = "success";
         } else {
-            synchronized (QueryService.getBookMap()) {
-                if (QueryService.getBookMap().get(id) != null) {
-                    if (QueryService.getBookMap().get(id).getCount() > 0) {
-                        QueryService.getBookMap().get(id).setCount(QueryService.getBookMap().get(id).getCount() - 1);
+            synchronized (QueryService.getBookMap(this.ninjaProperties)) {
+                if (QueryService.getBookMap(this.ninjaProperties).get(id) != null) {
+                    if (QueryService.getBookMap(this.ninjaProperties).get(id).getCount() > 0) {
+                        QueryService.getBookMap(this.ninjaProperties).get(id).setCount(QueryService.getBookMap(this.ninjaProperties).get(id).getCount() - 1);
                         message = "success";
                     }
                 }
             }
             if (message.equals("success")) {
                 logger.info("Updating inventory of item " + id);
-                updateDB(QueryService.getBookMap().get(id).getBookNumber());
+                updateDB(QueryService.getBookMap(this.ninjaProperties).get(id).getBookNumber());
             }
         }
         UpdateResponse updateRes = new UpdateResponse();
@@ -93,8 +90,8 @@ public class UpdateService {
      * updates the book cost in database table and in-memory hashmap
      */
     public UpdateResponse updateCost(int id, int cost) {
-        updateCostInDb(QueryService.getBookMap().get(id).getBookNumber(), cost);
-        QueryService.getBookMap().get(id).setCost(cost);
+        updateCostInDb(QueryService.getBookMap(this.ninjaProperties).get(id).getBookNumber(), cost);
+        QueryService.getBookMap(this.ninjaProperties).get(id).setCost(cost);
 
         String message = "success";
         UpdateResponse updateRes = new UpdateResponse();
@@ -148,7 +145,7 @@ public class UpdateService {
      * syncReplica syncs all DBs in case of updates to DB
      */
     public void syncReplica(int id, String type, int cost) {
-        logger.info("Syncing DB across all replica");
+        logger.info("Syncing DB across all replica" + ninjaProperties);
         try {
             HttpClient client = HttpClient.newHttpClient();
             String catalogServer = getCatalogServer();

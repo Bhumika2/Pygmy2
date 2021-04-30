@@ -1,5 +1,6 @@
 package service;
 
+import com.google.inject.Inject;
 import models.Book;
 import ninja.utils.NinjaProperties;
 import org.slf4j.Logger;
@@ -29,10 +30,8 @@ public class QueryService {
      */
     public static void getAllBooks(NinjaProperties ninjaProperties) {
         try {
-            logger.info("Starting to re-sync DB with replica");
             UpdateService updateService = new UpdateService(ninjaProperties);
             updateService.updateDB();
-            logger.info("Re-syncing DB with replica completed");
 
             Statement statement = DBService.getConnection().createStatement();
             statement.setQueryTimeout(30);
@@ -63,12 +62,18 @@ public class QueryService {
         }
     }
 
-    public static HashMap<Integer, Book> getBookMap() {
+    public static HashMap<Integer, Book> getBookMap(NinjaProperties ninjaProperties) {
+        if (bookMap == null){
+            getAllBooks(ninjaProperties);
+        }
         return bookMap;
     }
 
 
-    public static HashMap<String, List<Integer>> getTopicMap() {
+    public static HashMap<String, List<Integer>> getTopicMap(NinjaProperties ninjaProperties) {
+        if (topicMap == null){
+            getAllBooks(ninjaProperties);
+        }
         return topicMap;
     }
 }

@@ -123,8 +123,10 @@ public class ApplicationController {
         }
         if (searchCache.containsKey(key)) {
             catalogResponse = searchCache.get(key);
-            searchCache.remove(key);
-            searchCache.put(key, catalogResponse);
+            synchronized(this.searchCache) {
+                searchCache.remove(key);
+                searchCache.put(key, catalogResponse);
+            }
             logger.info("Returning result from search cache");
         } else {
             Catalog catalog = new Catalog(ninjaProperties);
@@ -142,11 +144,13 @@ public class ApplicationController {
             this.catalogSwitch = !this.catalogSwitch;
 
             if (catalogResponse != null) {
-                if (searchCache.size() == CACHE_SIZE) {
-                    String LRUKey = searchCache.entrySet().iterator().next().getKey();
-                    searchCache.remove(LRUKey);
+                synchronized(this.searchCache) {
+                    if (searchCache.size() == CACHE_SIZE) {
+                        String LRUKey = searchCache.entrySet().iterator().next().getKey();
+                        searchCache.remove(LRUKey);
+                    }
+                    searchCache.put(key, catalogResponse);
                 }
-                searchCache.put(key, catalogResponse);
             }
         }
         long timeElapsed = System.nanoTime() - startTime;
@@ -165,8 +169,10 @@ public class ApplicationController {
         CatalogResponse catalogResponse = null;
         if (lookupCache.containsKey(bookNumber)) {
             catalogResponse = lookupCache.get(bookNumber);
-            lookupCache.remove(bookNumber);
-            lookupCache.put(bookNumber, catalogResponse);
+            synchronized(this.lookupCache) {
+                lookupCache.remove(bookNumber);
+                lookupCache.put(bookNumber, catalogResponse);
+            }
             logger.info("Returning result from lookup cache");
         } else {
             Catalog catalog = new Catalog(ninjaProperties);
@@ -184,11 +190,13 @@ public class ApplicationController {
             this.catalogSwitch = !this.catalogSwitch;
 
             if (catalogResponse != null) {
-                if (lookupCache.size() == CACHE_SIZE) {
-                    Integer LRUKey = lookupCache.entrySet().iterator().next().getKey();
-                    lookupCache.remove(LRUKey);
+                synchronized(this.lookupCache) {
+                    if (lookupCache.size() == CACHE_SIZE) {
+                        Integer LRUKey = lookupCache.entrySet().iterator().next().getKey();
+                        lookupCache.remove(LRUKey);
+                    }
+                    lookupCache.put(bookNumber, catalogResponse);
                 }
-                lookupCache.put(bookNumber, catalogResponse);
             }
         }
         long timeElapsed = System.nanoTime() - startTime;

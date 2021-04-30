@@ -51,7 +51,7 @@ public class ApplicationController {
     @Inject
     public ApplicationController(NinjaProperties ninjaProperties) {
         this.ninjaProperties = ninjaProperties;
-        QueryService.getAllBooks(ninjaProperties);
+        //QueryService.getAllBooks(ninjaProperties);
     }
 
     /**
@@ -61,7 +61,7 @@ public class ApplicationController {
     public Result queryByItem(@PathParam("id") int id) {
         logger.info("Query by Item request received for item: " + id);
         long startTime = System.nanoTime();
-        Book book = QueryService.getBookMap().get(id);
+        Book book = QueryService.getBookMap(this.ninjaProperties).get(id);
         long timeElapsed = System.nanoTime() - startTime;
         logger.info("Query by Item response time in milliseconds : " + timeElapsed / 1000000);
         return Results.json().render(book);
@@ -75,10 +75,10 @@ public class ApplicationController {
         topic = URLDecoder.decode(topic, StandardCharsets.UTF_8.toString());
         logger.info("Query by Subject request received for topic: " + topic);
         long startTime = System.nanoTime();
-        List<Integer> bookList = QueryService.getTopicMap().get(topic);
+        List<Integer> bookList = QueryService.getTopicMap(this.ninjaProperties).get(topic);
         List<Book> booksByTopic = new ArrayList<>();
         for (Integer bookNumber : bookList) {
-            booksByTopic.add(QueryService.getBookMap().get(bookNumber));
+            booksByTopic.add(QueryService.getBookMap(this.ninjaProperties).get(bookNumber));
         }
         long timeElapsed = System.nanoTime() - startTime;
         logger.info("Query by Subject response time in milliseconds : " + timeElapsed / 1000000);
@@ -112,9 +112,9 @@ public class ApplicationController {
         logger.info("Update cost request received for item: " + id);
         long startTime = System.nanoTime();
         UpdateService updateService = new UpdateService(ninjaProperties);
+        updateService.frontendCacheInvalidate(id);
         UpdateResponse updateRes = updateService.updateCost(id, cost);
         if (updateRes.getMessage().equals("success")) {
-            updateService.frontendCacheInvalidate(id);
             updateService.syncReplica(id, "Cost", cost);
         }
         long timeElapsed = System.nanoTime() - startTime;
@@ -127,7 +127,7 @@ public class ApplicationController {
      */
     public Result syncDB(@PathParam("id") int id, @PathParam("key") String key, @Param("cost") int cost) {
         logger.info("Syncing DB");
-        UpdateService updateService = new UpdateService();
+        UpdateService updateService = new UpdateService(ninjaProperties);
         switch (key) {
             case "Cost":
                 updateService.updateCost(id, cost);
