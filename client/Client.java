@@ -33,7 +33,9 @@ public class Client {
             }
 
             String frontendHostName = prop.getProperty("frontendHost");
-            //String frontendHostName = "localhost";
+            if (frontendHostName.equals("frontend")){
+                frontendHostName = "localhost";
+            }
 
             while (true) {
                 String action = getRandomAction();

@@ -24,7 +24,7 @@ public class HeartBeatService{
     @Schedule(delay = 2, initialDelay = 0, timeUnit = TimeUnit.SECONDS)
     public void sendHeartBeat(){
             try {
-                logger.info("Sending heartbeat message to frontend cache");
+                logger.info("Sending heartbeat message to frontend");
                 HttpClient client = HttpClient.newHttpClient();
                 String serverName = ninjaProperties.get("frontendHost") + ":" + ninjaProperties.get("frontendPort");
                 String server = "catalog"+System.getProperty("server.name");

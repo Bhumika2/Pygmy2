@@ -20,7 +20,6 @@ public class DBService {
     public static void setDBConnection() {
         try {
             Class.forName("org.sqlite.JDBC");
-            logger.info("first " + connection);
             if (connection == null) {
                 connection = DriverManager.getConnection("jdbc:sqlite:books.db");
                 logger.info("test" + connection);

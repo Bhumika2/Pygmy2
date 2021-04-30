@@ -9,7 +9,7 @@ cp hostname.conf frontend/src/main/java/conf/.
 echo "Starting up microservices in containers"
 docker compose up --detach
 
-echo "Waiting for servers to come up"
+echo "Waiting for servers to come up (90 seconds)"
 sleep 90
 
 echo "Starting up client(s)"
@@ -25,8 +25,18 @@ for ((i=1; i<= $N; i++))
 	done
 cd ../
 
-echo "Process will run for 60 seconds - value can be changed in run.sh file"
-sleep 60
+echo "System will run for 70 seconds - value can be changed in run.sh file"
+sleep 10
+
+echo "Simulating fault in one catalog replica for 10 seconds"
+docker kill catalogreplica
+
+sleep 10
+
+echo "Starting catalog replica again"
+docker compose up catalogreplica --detach
+
+sleep 50
 
 echo "Killing clients"
 kill $(ps aux | grep '[C]lient' | awk '{print $2}')

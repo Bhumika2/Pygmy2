@@ -145,7 +145,7 @@ public class UpdateService {
      * syncReplica syncs all DBs in case of updates to DB
      */
     public void syncReplica(int id, String type, int cost) {
-        logger.info("Syncing DB across all replica" + ninjaProperties);
+        logger.info("Syncing DB across all replica");
         try {
             HttpClient client = HttpClient.newHttpClient();
             String catalogServer = getCatalogServer();

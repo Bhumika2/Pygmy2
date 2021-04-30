@@ -33,7 +33,6 @@ public class Catalog {
     public List<CatalogResponse> searchTopic(String topic, String host, String port) {
         List<CatalogResponse> catalogResponse = null;
         try {
-            logger.info("Calling Catalog microservice");
             ObjectMapper objectMapper = new ObjectMapper();
             HttpClient client = HttpClient.newHttpClient();
             String serverName = host + ":" + port;
@@ -67,7 +66,6 @@ public class Catalog {
     public CatalogResponse lookupBook(Integer bookNumber, String host, String port) {
         CatalogResponse catalogResponse = null;
         try {
-            logger.info("Calling Catalog microservice");
             ObjectMapper objectMapper = new ObjectMapper();
             //String catalogReqStr = objectMapper.writeValueAsString(catalogRequest);
             HttpClient client = HttpClient.newHttpClient();

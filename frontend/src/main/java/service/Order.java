@@ -32,7 +32,6 @@ public class Order {
     public OrderResponse buyBook(OrderRequest orderReq, String host, String port) {
         OrderResponse orderResponse = null;
         try {
-            logger.info("Calling Order microservice");
             ObjectMapper objectMapper = new ObjectMapper();
             String orderReqStr = objectMapper.writeValueAsString(orderReq);
             HttpClient client = HttpClient.newHttpClient();
