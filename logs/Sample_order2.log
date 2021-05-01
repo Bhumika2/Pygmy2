@@ -1,35 +1,35 @@
-23:34:14.056 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode dev
-23:34:14.239 [NinjaJetty] INFO  org.eclipse.jetty.util.log - Logging initialized @659ms to org.eclipse.jetty.util.log.Slf4jLog
-23:34:14.376 [NinjaJetty] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
-23:34:14.511 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.35.v20201120 on <all>:8084
-23:34:14.515 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.10+9
-23:34:14.584 [NinjaJetty] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@5ba88be8{STARTED}
-23:34:14.619 [NinjaJetty] INFO  ninja.Bootstrap - Successfully configured Logback.
-23:34:14.622 [NinjaJetty] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
-23:34:16.123 [NinjaJetty] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
-23:34:16.126 [NinjaJetty] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
-23:34:16.168 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-23:34:16.169 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
-23:34:16.170 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-23:34:16.173 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
-23:34:16.173 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
-23:34:16.174 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
-23:34:16.177 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
-23:34:16.177 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
-23:34:16.187 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
-23:34:16.188 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
-23:34:16.189 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
-23:34:16.190 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
-23:34:16.191 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
-23:34:16.191 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
-23:34:16.192 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
-23:34:16.193 [NinjaJetty] INFO  ninja.Bootstrap - Ninja injector started in 1567 ms.
-23:34:16.221 [NinjaJetty] WARN  ninja.params.ControllerMethodInvoker - Using deprecated non-strict mode for injection of parameters into controller (ninja.strict_argument_extractors = false). This mode will soon be removed from Ninja. Make sure you upgrade your application as soon as possible. More: https://www.ninjaframework.org/documentation/basic_concepts/controllers.html 'A note about null and Optional'.
-23:34:16.223 [NinjaJetty] INFO  ninja.RouterImpl - ------------------------------------------------
-23:34:16.224 [NinjaJetty] INFO  ninja.RouterImpl - Registered routes
-23:34:16.225 [NinjaJetty] INFO  ninja.RouterImpl - ------------------------------------------------
-23:34:16.226 [NinjaJetty] INFO  ninja.RouterImpl - POST /buy  =>  controllers.ApplicationController::buy
-23:34:16.227 [NinjaJetty] INFO  ninja.NinjaDefault - 
+23:50:50.746 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode dev
+23:50:50.804 [NinjaJetty] INFO  org.eclipse.jetty.util.log - Logging initialized @409ms to org.eclipse.jetty.util.log.Slf4jLog
+23:50:50.843 [NinjaJetty] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+23:50:50.902 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.35.v20201120 on <all>:8084
+23:50:50.904 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.10+9
+23:50:50.932 [NinjaJetty] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@5ba88be8{STARTED}
+23:50:50.940 [NinjaJetty] INFO  ninja.Bootstrap - Successfully configured Logback.
+23:50:50.941 [NinjaJetty] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+23:50:51.372 [NinjaJetty] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+23:50:51.375 [NinjaJetty] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+23:50:51.410 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+23:50:51.411 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+23:50:51.412 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+23:50:51.413 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+23:50:51.414 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+23:50:51.415 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+23:50:51.418 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+23:50:51.419 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+23:50:51.427 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+23:50:51.427 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+23:50:51.428 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+23:50:51.429 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+23:50:51.430 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+23:50:51.431 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+23:50:51.432 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+23:50:51.435 [NinjaJetty] INFO  ninja.Bootstrap - Ninja injector started in 492 ms.
+23:50:51.442 [NinjaJetty] WARN  ninja.params.ControllerMethodInvoker - Using deprecated non-strict mode for injection of parameters into controller (ninja.strict_argument_extractors = false). This mode will soon be removed from Ninja. Make sure you upgrade your application as soon as possible. More: https://www.ninjaframework.org/documentation/basic_concepts/controllers.html 'A note about null and Optional'.
+23:50:51.444 [NinjaJetty] INFO  ninja.RouterImpl - ------------------------------------------------
+23:50:51.445 [NinjaJetty] INFO  ninja.RouterImpl - Registered routes
+23:50:51.447 [NinjaJetty] INFO  ninja.RouterImpl - ------------------------------------------------
+23:50:51.448 [NinjaJetty] INFO  ninja.RouterImpl - POST /buy  =>  controllers.ApplicationController::buy
+23:50:51.450 [NinjaJetty] INFO  ninja.NinjaDefault - 
  _______  .___ _______        ____.  _____   
  \      \ |   |\      \      |    | /  _  \  
  /   |   \|   |/   |   \     |    |/  /_\  \ 
@@ -37,61 +37,75 @@
 \____|__  /___\____|__  /\________\____|__  /  @ninjaframework
      web\/framework   \/                  \/   6.8.1
 
-23:34:16.228 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
-23:34:16.230 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 2ms
-23:34:16.237 [NinjaJetty] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1e9d7366{/,null,AVAILABLE}
-23:34:16.261 [NinjaJetty] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@76a4ebf2{HTTP/1.1, (http/1.1)}{0.0.0.0:8084}
-23:34:16.263 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - Started @2683ms
-23:34:16.263 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.35.v20201120 on <all>:8084
-23:34:16.264 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
-23:34:16.265 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Ninja application running at
-23:34:16.266 [NinjaJetty] INFO  ninja.standalone.NinjaJetty -  => http://localhost:8084
-23:34:16.267 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
-23:34:39.261 [qtp2122049087-16] INFO  Pygmy - Buy request received for book: 3
-23:34:39.263 [qtp2122049087-16] INFO  Pygmy - Checking availability of book: 3
-23:34:39.404 [qtp2122049087-16] INFO  Pygmy - Initiating restock request for book: 3
-23:34:39.585 [qtp2122049087-16] INFO  Pygmy - Buy response time in milliseconds : 321
-23:34:42.762 [qtp2122049087-11] INFO  Pygmy - Buy request received for book: 1
-23:34:42.764 [qtp2122049087-11] INFO  Pygmy - Checking availability of book: 1
-23:34:42.786 [qtp2122049087-11] INFO  Pygmy - Initiating buy request for book: 1
-23:34:42.822 [qtp2122049087-11] INFO  Pygmy - Buy response time in milliseconds : 57
-23:34:47.340 [qtp2122049087-12] INFO  Pygmy - Buy request received for book: 4
-23:34:47.341 [qtp2122049087-12] INFO  Pygmy - Checking availability of book: 4
-23:34:47.353 [qtp2122049087-12] INFO  Pygmy - Initiating buy request for book: 4
-23:34:47.382 [qtp2122049087-12] INFO  Pygmy - Buy response time in milliseconds : 40
-23:34:52.333 [qtp2122049087-15] INFO  Pygmy - Buy request received for book: 4
-23:34:52.335 [qtp2122049087-15] INFO  Pygmy - Checking availability of book: 4
-23:34:52.353 [qtp2122049087-15] INFO  Pygmy - Initiating buy request for book: 4
-23:34:52.388 [qtp2122049087-15] INFO  Pygmy - Buy response time in milliseconds : 52
-23:35:02.883 [qtp2122049087-18] INFO  Pygmy - Buy request received for book: 3
-23:35:02.886 [qtp2122049087-18] INFO  Pygmy - Checking availability of book: 3
-23:35:02.904 [qtp2122049087-18] INFO  Pygmy - Initiating buy request for book: 3
-23:35:02.941 [qtp2122049087-18] INFO  Pygmy - Buy response time in milliseconds : 55
-23:35:07.148 [qtp2122049087-16] INFO  Pygmy - Buy request received for book: 2
-23:35:07.152 [qtp2122049087-16] INFO  Pygmy - Checking availability of book: 2
-23:35:07.163 [qtp2122049087-16] INFO  Pygmy - Initiating buy request for book: 2
-23:35:07.196 [qtp2122049087-16] INFO  Pygmy - Buy response time in milliseconds : 43
-23:35:15.557 [qtp2122049087-16] INFO  Pygmy - Buy request received for book: 1
-23:35:15.559 [qtp2122049087-16] INFO  Pygmy - Checking availability of book: 1
-23:35:15.579 [qtp2122049087-15] INFO  Pygmy - Buy request received for book: 1
-23:35:15.579 [qtp2122049087-16] INFO  Pygmy - Initiating buy request for book: 1
-23:35:15.580 [qtp2122049087-15] INFO  Pygmy - Checking availability of book: 1
-23:35:15.594 [qtp2122049087-15] INFO  Pygmy - Initiating buy request for book: 1
-23:35:15.624 [qtp2122049087-16] INFO  Pygmy - Buy response time in milliseconds : 64
-23:35:15.624 [qtp2122049087-15] INFO  Pygmy - Buy response time in milliseconds : 43
-23:35:16.678 [qtp2122049087-18] INFO  Pygmy - Buy request received for book: 1
-23:35:16.680 [qtp2122049087-18] INFO  Pygmy - Checking availability of book: 1
-23:35:16.699 [qtp2122049087-18] INFO  Pygmy - Initiating restock request for book: 1
-23:35:16.734 [qtp2122049087-18] INFO  Pygmy - Buy response time in milliseconds : 54
-23:35:24.031 [qtp2122049087-11] INFO  Pygmy - Buy request received for book: 1
-23:35:24.034 [qtp2122049087-11] INFO  Pygmy - Checking availability of book: 1
-23:35:24.055 [qtp2122049087-11] INFO  Pygmy - Initiating buy request for book: 1
-23:35:24.093 [qtp2122049087-11] INFO  Pygmy - Buy response time in milliseconds : 58
-23:35:27.130 [qtp2122049087-15] INFO  Pygmy - Buy request received for book: 4
-23:35:27.132 [qtp2122049087-15] INFO  Pygmy - Checking availability of book: 4
-23:35:27.150 [qtp2122049087-15] INFO  Pygmy - Initiating buy request for book: 4
-23:35:27.189 [qtp2122049087-15] INFO  Pygmy - Buy response time in milliseconds : 57
-23:35:33.574 [qtp2122049087-18] INFO  Pygmy - Buy request received for book: 2
-23:35:33.577 [qtp2122049087-18] INFO  Pygmy - Checking availability of book: 2
-23:35:33.596 [qtp2122049087-18] INFO  Pygmy - Initiating buy request for book: 2
-23:35:33.632 [qtp2122049087-18] INFO  Pygmy - Buy response time in milliseconds : 55
+23:50:51.450 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+23:50:51.453 [NinjaJetty] INFO  ninja.scheduler.Scheduler - Scheduling method sendHeartBeat on service.HeartBeatService@6b4fd7d to be run every 2 SECONDS after 0 SECONDS
+23:50:51.454 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 4ms
+23:50:51.454 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:50:51.458 [NinjaJetty] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@651caa2e{/,null,AVAILABLE}
+23:50:51.481 [NinjaJetty] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@76a4ebf2{HTTP/1.1, (http/1.1)}{0.0.0.0:8084}
+23:50:51.482 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - Started @1088ms
+23:50:51.483 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.35.v20201120 on <all>:8084
+23:50:51.484 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+23:50:51.485 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+23:50:51.489 [NinjaJetty] INFO  ninja.standalone.NinjaJetty -  => http://localhost:8084
+23:50:51.491 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+23:50:53.676 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:50:55.708 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:50:57.742 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:50:59.773 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:01.805 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:03.836 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:05.864 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:07.887 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:09.909 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:11.926 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:13.941 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:15.964 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:17.980 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:19.997 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:22.008 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:22.125 [qtp2122049087-13] INFO  Pygmy - Buy request received for book: 3
+23:51:22.127 [qtp2122049087-13] INFO  Pygmy - Checking availability of book: 3
+23:51:22.225 [qtp2122049087-13] INFO  Pygmy - null
+23:51:23.903 [qtp2122049087-11] INFO  Pygmy - Buy request received for book: 1
+23:51:23.905 [qtp2122049087-11] INFO  Pygmy - Checking availability of book: 1
+23:51:23.909 [qtp2122049087-11] INFO  Pygmy - null
+23:51:24.058 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:26.068 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:28.096 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:30.122 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:32.153 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:34.171 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:36.181 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:38.195 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:40.203 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:42.211 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:44.220 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:46.229 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:48.236 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:50.246 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:52.254 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:54.264 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:56.274 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:51:58.282 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:00.291 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:02.300 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:04.307 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:06.316 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:08.323 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:10.329 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:12.340 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:14.346 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:16.355 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:18.363 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:20.371 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:22.386 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:24.402 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:26.411 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:28.423 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:30.449 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:32.513 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:34.543 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:36.568 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache
+23:52:36.585 [pool-1-thread-1] INFO  Pygmy - Connection refused
+23:52:38.587 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend cache

@@ -124,7 +124,7 @@ public class Client {
 
     public static int getRandomNumber() {
         Random random = new Random();
-        int randomNum = random.nextInt(4) + 1;
+        int randomNum = random.nextInt(7) + 1;
         return randomNum;
     }
 

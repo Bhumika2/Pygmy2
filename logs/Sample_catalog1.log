@@ -1,39 +1,40 @@
-23:34:17.242 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode dev
-23:34:17.315 [NinjaJetty] INFO  org.eclipse.jetty.util.log - Logging initialized @500ms to org.eclipse.jetty.util.log.Slf4jLog
-23:34:17.361 [NinjaJetty] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
-23:34:17.416 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.35.v20201120 on <all>:8081
-23:34:17.418 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.10+9
-23:34:17.441 [NinjaJetty] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@3899782c{STARTED}
-23:34:17.450 [NinjaJetty] INFO  ninja.Bootstrap - Successfully configured Logback.
-23:34:17.452 [NinjaJetty] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
-23:34:17.895 [NinjaJetty] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
-23:34:17.896 [NinjaJetty] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
-23:34:17.919 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-23:34:17.920 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
-23:34:17.921 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
-23:34:17.922 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
-23:34:17.922 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
-23:34:17.923 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
-23:34:17.923 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
-23:34:17.924 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
-23:34:17.930 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
-23:34:17.930 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
-23:34:17.931 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
-23:34:17.931 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
-23:34:17.932 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
-23:34:17.932 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
-23:34:17.933 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
-23:34:17.934 [NinjaJetty] INFO  ninja.Bootstrap - Ninja injector started in 479 ms.
-23:34:17.942 [NinjaJetty] WARN  ninja.params.ControllerMethodInvoker - Using deprecated non-strict mode for injection of parameters into controller (ninja.strict_argument_extractors = false). This mode will soon be removed from Ninja. Make sure you upgrade your application as soon as possible. More: https://www.ninjaframework.org/documentation/basic_concepts/controllers.html 'A note about null and Optional'.
-23:34:17.946 [NinjaJetty] INFO  ninja.RouterImpl - ---------------------------------------------------------------------
-23:34:17.947 [NinjaJetty] INFO  ninja.RouterImpl - Registered routes
-23:34:17.948 [NinjaJetty] INFO  ninja.RouterImpl - ---------------------------------------------------------------------
-23:34:17.948 [NinjaJetty] INFO  ninja.RouterImpl - GET  /queryBySubject/{topic}       =>  controllers.ApplicationController::queryBySubject
-23:34:17.949 [NinjaJetty] INFO  ninja.RouterImpl - GET  /queryByItem/{id}             =>  controllers.ApplicationController::queryByItem
-23:34:17.949 [NinjaJetty] INFO  ninja.RouterImpl - POST /updateInventory/{id}/{type}  =>  controllers.ApplicationController::update
-23:34:17.950 [NinjaJetty] INFO  ninja.RouterImpl - POST /updateCost/{id}/{cost}       =>  controllers.ApplicationController::updateCost
-23:34:17.950 [NinjaJetty] INFO  ninja.RouterImpl - POST /syncDb/{id}/{key}            =>  controllers.ApplicationController::syncDB
-23:34:17.955 [NinjaJetty] INFO  ninja.NinjaDefault - 
+23:50:47.238 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode dev
+23:50:47.361 [NinjaJetty] INFO  org.eclipse.jetty.util.log - Logging initialized @793ms to org.eclipse.jetty.util.log.Slf4jLog
+23:50:47.429 [NinjaJetty] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+23:50:47.520 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Trying to start jetty v9.4.35.v20201120 on <all>:8081
+23:50:47.521 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - jetty-9.4.35.v20201120; built: 2020-11-20T21:17:03.964Z; git: bdc54f03a5e0a7e280fab27f55c3c75ee8da89fb; jvm 11.0.10+9
+23:50:47.575 [NinjaJetty] INFO  ninja.servlet.NinjaServletListener - Using JSR-356 websocket container ServerContainer@3899782c{STARTED}
+23:50:47.585 [NinjaJetty] INFO  ninja.Bootstrap - Successfully configured Logback.
+23:50:47.587 [NinjaJetty] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+23:50:48.371 [NinjaJetty] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en.properties (not a bad thing necessarily, but I am returing null)
+23:50:48.374 [NinjaJetty] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en.properties but it was specified in application.conf. Using default language instead.
+23:50:48.444 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+23:50:48.445 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+23:50:48.447 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+23:50:48.448 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+23:50:48.448 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+23:50:48.449 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+23:50:48.450 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+23:50:48.452 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+23:50:48.471 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+23:50:48.474 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+23:50:48.477 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - -------------------------------------------------------------------------------------
+23:50:48.477 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+23:50:48.479 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+23:50:48.480 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+23:50:48.480 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - multipart/form-data                =>  ninja.bodyparser.BodyParserEngineMultipartPost
+23:50:48.490 [NinjaJetty] INFO  ninja.Bootstrap - Ninja injector started in 901 ms.
+23:50:48.551 [NinjaJetty] WARN  ninja.params.ControllerMethodInvoker - Using deprecated non-strict mode for injection of parameters into controller (ninja.strict_argument_extractors = false). This mode will soon be removed from Ninja. Make sure you upgrade your application as soon as possible. More: https://www.ninjaframework.org/documentation/basic_concepts/controllers.html 'A note about null and Optional'.
+23:50:48.579 [NinjaJetty] INFO  ninja.RouterImpl - ---------------------------------------------------------------------
+23:50:48.586 [NinjaJetty] INFO  ninja.RouterImpl - Registered routes
+23:50:48.587 [NinjaJetty] INFO  ninja.RouterImpl - ---------------------------------------------------------------------
+23:50:48.588 [NinjaJetty] INFO  ninja.RouterImpl - GET  /queryBySubject/{topic}       =>  controllers.ApplicationController::queryBySubject
+23:50:48.592 [NinjaJetty] INFO  ninja.RouterImpl - GET  /queryByItem/{id}             =>  controllers.ApplicationController::queryByItem
+23:50:48.594 [NinjaJetty] INFO  ninja.RouterImpl - POST /updateInventory/{id}/{type}  =>  controllers.ApplicationController::update
+23:50:48.594 [NinjaJetty] INFO  ninja.RouterImpl - POST /updateCost/{id}/{cost}       =>  controllers.ApplicationController::updateCost
+23:50:48.595 [NinjaJetty] INFO  ninja.RouterImpl - POST /syncDb/{id}/{key}            =>  controllers.ApplicationController::syncDB
+23:50:48.596 [NinjaJetty] INFO  ninja.RouterImpl - GET  /resyncDB                     =>  controllers.ApplicationController::resyncDB
+23:50:48.599 [NinjaJetty] INFO  ninja.NinjaDefault - 
  _______  .___ _______        ____.  _____   
  \      \ |   |\      \      |    | /  _  \  
  /   |   \|   |/   |   \     |    |/  /_\  \ 
@@ -41,176 +42,405 @@
 \____|__  /___\____|__  /\________\____|__  /  @ninjaframework
      web\/framework   \/                  \/   6.8.1
 
-23:34:17.956 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
-23:34:17.957 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 1ms
-23:34:17.960 [NinjaJetty] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@70f91ae3{/,null,AVAILABLE}
-23:34:17.971 [NinjaJetty] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@53fe15ff{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
-23:34:17.972 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - Started @1158ms
-23:34:17.978 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.35.v20201120 on <all>:8081
-23:34:17.979 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
-23:34:17.979 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Ninja application running at
-23:34:17.980 [NinjaJetty] INFO  ninja.standalone.NinjaJetty -  => http://localhost:8081
-23:34:17.980 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
-23:34:37.357 [qtp1632413663-18] INFO  Pygmy - first null
-23:34:37.454 [qtp1632413663-18] INFO  Pygmy - testorg.sqlite.jdbc4.JDBC4Connection@28924792
-23:34:37.469 [qtp1632413663-18] INFO  Pygmy - Current inventory in library: {1=Book{bookNumber=1, bookName='How to get a good grade in 677 in 20 minutes a day', topic='distributed systems', cost=25, count=0}, 2=Book{bookNumber=2, bookName='RPCs for Dummies', topic='distributed systems', cost=50, count=5}, 3=Book{bookNumber=3, bookName='Xen and the Art of Surviving Graduate School', topic='graduate school', cost=40, count=0}, 4=Book{bookNumber=4, bookName='Cooking for the Impatient Graduate Student', topic='graduate school', cost=60, count=5}}
-23:34:37.471 [qtp1632413663-18] INFO  Pygmy - Query by Subject request received for topic: graduate school
-23:34:37.477 [qtp1632413663-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
-23:34:37.581 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 1
-23:34:37.582 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:34:37.637 [qtp1632413663-14] INFO  Pygmy - Restock update request received for item: 1
-23:34:37.640 [qtp1632413663-14] INFO  Pygmy - Restocking book - 1
-23:34:37.650 [qtp1632413663-14] INFO  Pygmy - Invalidating frontend cache
-23:34:37.847 [qtp1632413663-14] INFO  Pygmy - Frontend cache invalidated successfully
-23:34:37.848 [qtp1632413663-14] INFO  Pygmy - Syncing DB across all replica
-23:34:38.019 [qtp1632413663-14] INFO  Pygmy - DB sync successful
-23:34:38.020 [qtp1632413663-14] INFO  Pygmy - Update response time in milliseconds : 381
-23:34:39.575 [qtp1632413663-16] INFO  Pygmy - Syncing DB
-23:34:39.576 [qtp1632413663-16] INFO  Pygmy - Restocking book - 3
-23:34:39.901 [qtp1632413663-17] INFO  Pygmy - Query by Item request received for item: 1
-23:34:39.903 [qtp1632413663-17] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:34:39.915 [qtp1632413663-18] INFO  Pygmy - Buy update request received for item: 1
-23:34:39.921 [qtp1632413663-18] INFO  Pygmy - Invalidating frontend cache
-23:34:39.929 [qtp1632413663-18] INFO  Pygmy - Frontend cache invalidated successfully
-23:34:39.931 [qtp1632413663-18] INFO  Pygmy - Syncing DB across all replica
-23:34:39.940 [qtp1632413663-18] INFO  Pygmy - DB sync successful
-23:34:39.940 [qtp1632413663-18] INFO  Pygmy - Update response time in milliseconds : 23
-23:34:40.662 [qtp1632413663-18] INFO  Pygmy - Query by Item request received for item: 1
-23:34:40.664 [qtp1632413663-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:34:42.062 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 4
-23:34:42.064 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:34:42.811 [qtp1632413663-17] INFO  Pygmy - Syncing DB
-23:34:43.869 [qtp1632413663-18] INFO  Pygmy - Query by Item request received for item: 1
-23:34:43.872 [qtp1632413663-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:34:47.040 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 3
-23:34:47.042 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:34:47.055 [qtp1632413663-17] INFO  Pygmy - Buy update request received for item: 3
-23:34:47.061 [qtp1632413663-17] INFO  Pygmy - Invalidating frontend cache
-23:34:47.070 [qtp1632413663-17] INFO  Pygmy - Frontend cache invalidated successfully
-23:34:47.071 [qtp1632413663-17] INFO  Pygmy - Syncing DB across all replica
-23:34:47.084 [qtp1632413663-17] INFO  Pygmy - DB sync successful
-23:34:47.085 [qtp1632413663-17] INFO  Pygmy - Update response time in milliseconds : 28
-23:34:47.373 [qtp1632413663-18] INFO  Pygmy - Syncing DB
-23:34:48.130 [qtp1632413663-16] INFO  Pygmy - Query by Subject request received for topic: graduate school
-23:34:48.133 [qtp1632413663-16] INFO  Pygmy - Query by Subject response time in milliseconds : 0
-23:34:48.444 [qtp1632413663-17] INFO  Pygmy - Query by Item request received for item: 4
-23:34:48.446 [qtp1632413663-17] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:34:48.462 [qtp1632413663-18] INFO  Pygmy - Buy update request received for item: 4
-23:34:48.469 [qtp1632413663-18] INFO  Pygmy - Invalidating frontend cache
-23:34:48.476 [qtp1632413663-18] INFO  Pygmy - Frontend cache invalidated successfully
-23:34:48.477 [qtp1632413663-18] INFO  Pygmy - Syncing DB across all replica
-23:34:48.486 [qtp1632413663-18] INFO  Pygmy - DB sync successful
-23:34:48.487 [qtp1632413663-18] INFO  Pygmy - Update response time in milliseconds : 23
-23:34:52.378 [qtp1632413663-16] INFO  Pygmy - Syncing DB
-23:34:53.448 [qtp1632413663-17] INFO  Pygmy - Query by Item request received for item: 1
-23:34:53.449 [qtp1632413663-17] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:34:53.464 [qtp1632413663-18] INFO  Pygmy - Buy update request received for item: 1
-23:34:53.470 [qtp1632413663-18] INFO  Pygmy - Invalidating frontend cache
-23:34:53.479 [qtp1632413663-18] INFO  Pygmy - Frontend cache invalidated successfully
-23:34:53.479 [qtp1632413663-18] INFO  Pygmy - Syncing DB across all replica
-23:34:53.489 [qtp1632413663-18] INFO  Pygmy - DB sync successful
-23:34:53.490 [qtp1632413663-18] INFO  Pygmy - Update response time in milliseconds : 25
-23:34:53.681 [qtp1632413663-16] INFO  Pygmy - Query by Subject request received for topic: distributed systems
-23:34:53.683 [qtp1632413663-16] INFO  Pygmy - Query by Subject response time in milliseconds : 0
-23:34:56.613 [qtp1632413663-17] INFO  Pygmy - Query by Item request received for item: 1
-23:34:56.615 [qtp1632413663-17] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:34:59.958 [qtp1632413663-18] INFO  Pygmy - Query by Item request received for item: 3
-23:34:59.961 [qtp1632413663-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:02.931 [qtp1632413663-16] INFO  Pygmy - Syncing DB
-23:35:04.011 [qtp1632413663-17] INFO  Pygmy - Query by Item request received for item: 4
-23:35:04.012 [qtp1632413663-17] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:04.028 [qtp1632413663-18] INFO  Pygmy - Buy update request received for item: 4
-23:35:04.034 [qtp1632413663-18] INFO  Pygmy - Invalidating frontend cache
-23:35:04.042 [qtp1632413663-18] INFO  Pygmy - Frontend cache invalidated successfully
-23:35:04.043 [qtp1632413663-18] INFO  Pygmy - Syncing DB across all replica
-23:35:04.054 [qtp1632413663-18] INFO  Pygmy - DB sync successful
-23:35:04.055 [qtp1632413663-18] INFO  Pygmy - Update response time in milliseconds : 25
-23:35:06.167 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 4
-23:35:06.170 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:07.184 [qtp1632413663-17] INFO  Pygmy - Syncing DB
-23:35:11.405 [qtp1632413663-18] INFO  Pygmy - Query by Item request received for item: 4
-23:35:11.406 [qtp1632413663-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:11.416 [qtp1632413663-16] INFO  Pygmy - Buy update request received for item: 4
-23:35:11.420 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
-23:35:11.427 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
-23:35:11.428 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
-23:35:11.437 [qtp1632413663-16] INFO  Pygmy - DB sync successful
-23:35:11.438 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 20
-23:35:12.445 [qtp1632413663-18] INFO  Pygmy - Query by Item request received for item: 4
-23:35:12.448 [qtp1632413663-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:14.536 [qtp1632413663-18] INFO  Pygmy - Query by Item request received for item: 2
-23:35:14.538 [qtp1632413663-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:15.612 [qtp1632413663-16] INFO  Pygmy - Syncing DB
-23:35:15.616 [qtp1632413663-17] INFO  Pygmy - Syncing DB
-23:35:16.724 [qtp1632413663-18] INFO  Pygmy - Syncing DB
-23:35:16.725 [qtp1632413663-18] INFO  Pygmy - Restocking book - 1
-23:35:19.768 [qtp1632413663-18] INFO  Pygmy - Query by Subject request received for topic: graduate school
-23:35:19.769 [qtp1632413663-18] INFO  Pygmy - Query by Subject response time in milliseconds : 0
-23:35:20.883 [qtp1632413663-17] INFO  Pygmy - Query by Item request received for item: 4
-23:35:20.884 [qtp1632413663-17] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:20.891 [qtp1632413663-11] INFO  Pygmy - Restock update request received for item: 4
-23:35:20.892 [qtp1632413663-11] INFO  Pygmy - Restocking book - 4
-23:35:20.904 [qtp1632413663-11] INFO  Pygmy - Invalidating frontend cache
-23:35:20.910 [qtp1632413663-11] INFO  Pygmy - Frontend cache invalidated successfully
-23:35:20.910 [qtp1632413663-11] INFO  Pygmy - Syncing DB across all replica
-23:35:20.921 [qtp1632413663-11] INFO  Pygmy - DB sync successful
-23:35:20.921 [qtp1632413663-11] INFO  Pygmy - Update response time in milliseconds : 28
-23:35:24.080 [qtp1632413663-17] INFO  Pygmy - Syncing DB
-23:35:24.964 [qtp1632413663-18] INFO  Pygmy - Query by Item request received for item: 1
-23:35:24.966 [qtp1632413663-18] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:26.034 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 1
-23:35:26.036 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:26.049 [qtp1632413663-17] INFO  Pygmy - Buy update request received for item: 1
-23:35:26.054 [qtp1632413663-17] INFO  Pygmy - Invalidating frontend cache
-23:35:26.062 [qtp1632413663-17] INFO  Pygmy - Frontend cache invalidated successfully
-23:35:26.063 [qtp1632413663-17] INFO  Pygmy - Syncing DB across all replica
-23:35:26.077 [qtp1632413663-17] INFO  Pygmy - DB sync successful
-23:35:26.078 [qtp1632413663-17] INFO  Pygmy - Update response time in milliseconds : 27
-23:35:27.176 [qtp1632413663-18] INFO  Pygmy - Syncing DB
-23:35:28.241 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 1
-23:35:28.243 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:28.254 [qtp1632413663-17] INFO  Pygmy - Query by Item request received for item: 1
-23:35:28.255 [qtp1632413663-17] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:28.260 [qtp1632413663-18] INFO  Pygmy - Buy update request received for item: 1
-23:35:28.266 [qtp1632413663-18] INFO  Pygmy - Invalidating frontend cache
-23:35:28.269 [qtp1632413663-11] INFO  Pygmy - Buy update request received for item: 1
-23:35:28.275 [qtp1632413663-11] INFO  Pygmy - Invalidating frontend cache
-23:35:28.277 [qtp1632413663-18] INFO  Pygmy - Frontend cache invalidated successfully
-23:35:28.279 [qtp1632413663-18] INFO  Pygmy - Syncing DB across all replica
-23:35:28.290 [qtp1632413663-11] INFO  Pygmy - Frontend cache invalidated successfully
-23:35:28.291 [qtp1632413663-11] INFO  Pygmy - Syncing DB across all replica
-23:35:28.290 [qtp1632413663-18] INFO  Pygmy - DB sync successful
-23:35:28.292 [qtp1632413663-18] INFO  Pygmy - Update response time in milliseconds : 30
-23:35:28.305 [qtp1632413663-11] INFO  Pygmy - DB sync successful
-23:35:28.306 [qtp1632413663-11] INFO  Pygmy - Update response time in milliseconds : 36
-23:35:31.445 [qtp1632413663-17] INFO  Pygmy - Query by Item request received for item: 1
-23:35:31.447 [qtp1632413663-17] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:31.461 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 1
-23:35:31.462 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:31.474 [qtp1632413663-11] INFO  Pygmy - Buy update request received for item: 1
-23:35:31.478 [qtp1632413663-17] INFO  Pygmy - Buy update request received for item: 1
-23:35:31.479 [qtp1632413663-17] INFO  Pygmy - Update response time in milliseconds : 0
-23:35:31.482 [qtp1632413663-11] INFO  Pygmy - Invalidating frontend cache
-23:35:31.490 [qtp1632413663-11] INFO  Pygmy - Frontend cache invalidated successfully
-23:35:31.491 [qtp1632413663-11] INFO  Pygmy - Syncing DB across all replica
-23:35:31.500 [qtp1632413663-11] INFO  Pygmy - DB sync successful
-23:35:31.500 [qtp1632413663-11] INFO  Pygmy - Update response time in milliseconds : 25
-23:35:32.547 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 4
-23:35:32.548 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:32.563 [qtp1632413663-18] INFO  Pygmy - Buy update request received for item: 4
-23:35:32.568 [qtp1632413663-18] INFO  Pygmy - Invalidating frontend cache
-23:35:32.576 [qtp1632413663-18] INFO  Pygmy - Frontend cache invalidated successfully
-23:35:32.577 [qtp1632413663-18] INFO  Pygmy - Syncing DB across all replica
-23:35:32.593 [qtp1632413663-18] INFO  Pygmy - DB sync successful
-23:35:32.594 [qtp1632413663-18] INFO  Pygmy - Update response time in milliseconds : 30
-23:35:33.622 [qtp1632413663-18] INFO  Pygmy - Syncing DB
-23:35:34.668 [qtp1632413663-16] INFO  Pygmy - Query by Subject request received for topic: distributed systems
-23:35:34.670 [qtp1632413663-16] INFO  Pygmy - Query by Subject response time in milliseconds : 0
-23:35:35.699 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 4
-23:35:35.701 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
-23:35:35.717 [qtp1632413663-16] INFO  Pygmy - Buy update request received for item: 4
-23:35:35.721 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
-23:35:35.727 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
-23:35:35.728 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
-23:35:35.738 [qtp1632413663-16] INFO  Pygmy - DB sync successful
-23:35:35.739 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 20
+23:50:48.600 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+23:50:48.605 [NinjaJetty] INFO  ninja.scheduler.Scheduler - Scheduling method sendHeartBeat on service.HeartBeatService@4b511e61 to be run every 2 SECONDS after 0 SECONDS
+23:50:48.609 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 9ms
+23:50:48.609 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:50:48.636 [NinjaJetty] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@633a11eb{/,null,AVAILABLE}
+23:50:48.731 [NinjaJetty] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@53fe15ff{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+23:50:48.732 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - Started @2165ms
+23:50:48.734 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Started jetty v9.4.35.v20201120 on <all>:8081
+23:50:48.738 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+23:50:48.747 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+23:50:48.756 [NinjaJetty] INFO  ninja.standalone.NinjaJetty -  => http://localhost:8081
+23:50:48.760 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+23:50:49.765 [pool-1-thread-1] INFO  Pygmy - Connection refused
+23:50:51.769 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:50:53.794 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:50:55.822 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:50:57.856 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:50:59.890 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:01.910 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:03.942 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:05.969 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:08.003 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:10.036 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:11.619 [qtp1632413663-18] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+23:51:11.620 [qtp1632413663-17] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+23:51:11.624 [qtp1632413663-18] INFO  Pygmy - Sending request for re-syncing DB across replica
+23:51:11.624 [qtp1632413663-17] INFO  Pygmy - Sending request for re-syncing DB across replica
+23:51:11.842 [qtp1632413663-18] INFO  Pygmy - Updating DB for re-sync operation
+23:51:11.843 [qtp1632413663-17] INFO  Pygmy - Updating DB for re-sync operation
+23:51:11.907 [qtp1632413663-18] INFO  Pygmy - testorg.sqlite.jdbc4.JDBC4Connection@5c46e8bd
+23:51:11.907 [qtp1632413663-17] INFO  Pygmy - testorg.sqlite.jdbc4.JDBC4Connection@65fa6b70
+23:51:11.967 [qtp1632413663-18] INFO  Pygmy - Current inventory in library: {1=Book{bookNumber=1, bookName='How to get a good grade in 677 in 20 minutes a day', topic='distributed systems', cost=25, count=0}, 2=Book{bookNumber=2, bookName='RPCs for Dummies', topic='distributed systems', cost=50, count=5}, 3=Book{bookNumber=3, bookName='Xen and the Art of Surviving Graduate School', topic='graduate school', cost=40, count=0}, 4=Book{bookNumber=4, bookName='Cooking for the Impatient Graduate Student', topic='graduate school', cost=60, count=5}, 5=Book{bookNumber=5, bookName='How to finish Project 3 on time', topic='distributed systems', cost=100, count=5}, 6=Book{bookNumber=6, bookName='Why theory classes are so hard', topic='graduate school', cost=70, count=5}, 7=Book{bookNumber=7, bookName='Spring in the Pioneer Valley', topic='graduate school', cost=30, count=5}}
+23:51:11.967 [qtp1632413663-17] INFO  Pygmy - Current inventory in library: {1=Book{bookNumber=1, bookName='How to get a good grade in 677 in 20 minutes a day', topic='distributed systems', cost=25, count=0}, 2=Book{bookNumber=2, bookName='RPCs for Dummies', topic='distributed systems', cost=50, count=5}, 3=Book{bookNumber=3, bookName='Xen and the Art of Surviving Graduate School', topic='graduate school', cost=40, count=0}, 4=Book{bookNumber=4, bookName='Cooking for the Impatient Graduate Student', topic='graduate school', cost=60, count=5}, 5=Book{bookNumber=5, bookName='How to finish Project 3 on time', topic='distributed systems', cost=100, count=5}, 6=Book{bookNumber=6, bookName='Why theory classes are so hard', topic='graduate school', cost=70, count=5}, 7=Book{bookNumber=7, bookName='Spring in the Pioneer Valley', topic='graduate school', cost=30, count=5}}
+23:51:11.969 [qtp1632413663-17] INFO  Pygmy - Query by Subject response time in milliseconds : 346
+23:51:11.969 [qtp1632413663-18] INFO  Pygmy - Query by Subject response time in milliseconds : 347
+23:51:12.080 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:13.205 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 3
+23:51:13.207 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:14.114 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:14.384 [qtp1632413663-12] INFO  Pygmy - Query by Item request received for item: 4
+23:51:14.385 [qtp1632413663-12] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:14.385 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 2
+23:51:14.387 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:14.405 [qtp1632413663-16] INFO  Pygmy - Buy update request received for item: 2
+23:51:14.406 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
+23:51:14.405 [qtp1632413663-15] INFO  Pygmy - Buy update request received for item: 4
+23:51:14.407 [qtp1632413663-15] INFO  Pygmy - Invalidating frontend cache
+23:51:14.419 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:14.421 [qtp1632413663-16] INFO  Pygmy - Updating inventory of item 2
+23:51:14.423 [qtp1632413663-15] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:14.425 [qtp1632413663-15] INFO  Pygmy - Updating inventory of item 4
+23:51:14.434 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
+23:51:14.445 [qtp1632413663-15] INFO  Pygmy - Syncing DB across all replica
+23:51:14.455 [qtp1632413663-11] INFO  Pygmy - Re-Syncing DB request received
+23:51:14.462 [qtp1632413663-13] INFO  Pygmy - Re-Syncing DB request received
+23:51:14.513 [qtp1632413663-16] INFO  Pygmy - DB sync successful
+23:51:14.515 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 107
+23:51:14.516 [qtp1632413663-15] INFO  Pygmy - DB sync successful
+23:51:14.517 [qtp1632413663-15] INFO  Pygmy - Update response time in milliseconds : 109
+23:51:16.144 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:18.179 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:19.813 [qtp1632413663-12] INFO  Pygmy - Query by Item request received for item: 1
+23:51:19.814 [qtp1632413663-12] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:19.831 [qtp1632413663-11] INFO  Pygmy - Restock update request received for item: 1
+23:51:19.832 [qtp1632413663-11] INFO  Pygmy - Invalidating frontend cache
+23:51:19.843 [qtp1632413663-11] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:19.845 [qtp1632413663-11] INFO  Pygmy - Restocking book - 1
+23:51:19.851 [qtp1632413663-11] INFO  Pygmy - Syncing DB across all replica
+23:51:19.864 [qtp1632413663-11] INFO  Pygmy - DB sync successful
+23:51:19.864 [qtp1632413663-11] INFO  Pygmy - Update response time in milliseconds : 32
+23:51:20.213 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:20.894 [qtp1632413663-15] INFO  Pygmy - Query by Item request received for item: 4
+23:51:20.895 [qtp1632413663-15] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:21.837 [qtp1632413663-16] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+23:51:21.840 [qtp1632413663-16] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+23:51:22.243 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:22.319 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 3
+23:51:22.320 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:22.329 [qtp1632413663-12] INFO  Pygmy - Restock update request received for item: 3
+23:51:22.330 [qtp1632413663-12] INFO  Pygmy - Invalidating frontend cache
+23:51:22.340 [qtp1632413663-12] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:22.341 [qtp1632413663-12] INFO  Pygmy - Restocking book - 3
+23:51:22.347 [qtp1632413663-12] INFO  Pygmy - Syncing DB across all replica
+23:51:23.948 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 1
+23:51:23.949 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:23.957 [qtp1632413663-11] INFO  Pygmy - Buy update request received for item: 1
+23:51:23.958 [qtp1632413663-11] INFO  Pygmy - Invalidating frontend cache
+23:51:23.965 [qtp1632413663-11] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:23.965 [qtp1632413663-11] INFO  Pygmy - Updating inventory of item 1
+23:51:23.969 [qtp1632413663-11] INFO  Pygmy - Syncing DB across all replica
+23:51:24.268 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:26.303 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:28.337 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:30.382 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:32.422 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:34.436 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:36.448 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:37.813 [qtp1632413663-12] INFO  Pygmy - Connection refused
+23:51:37.814 [qtp1632413663-12] INFO  Pygmy - Update response time in milliseconds : 15484
+23:51:38.464 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:39.348 [qtp1632413663-11] INFO  Pygmy - Connection refused
+23:51:39.350 [qtp1632413663-11] INFO  Pygmy - Update response time in milliseconds : 15391
+23:51:39.866 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 1
+23:51:39.867 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:39.874 [qtp1632413663-16] INFO  Pygmy - Buy update request received for item: 1
+23:51:39.874 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
+23:51:39.880 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:39.880 [qtp1632413663-16] INFO  Pygmy - Updating inventory of item 1
+23:51:39.887 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
+23:51:39.891 [qtp1632413663-16] INFO  Pygmy - Connection refused
+23:51:39.892 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 17
+23:51:40.387 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 4
+23:51:40.388 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:40.395 [qtp1632413663-13] INFO  Pygmy - Buy update request received for item: 4
+23:51:40.396 [qtp1632413663-13] INFO  Pygmy - Invalidating frontend cache
+23:51:40.400 [qtp1632413663-13] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:40.401 [qtp1632413663-13] INFO  Pygmy - Updating inventory of item 4
+23:51:40.404 [qtp1632413663-13] INFO  Pygmy - Syncing DB across all replica
+23:51:40.407 [qtp1632413663-13] INFO  Pygmy - Connection refused
+23:51:40.407 [qtp1632413663-13] INFO  Pygmy - Update response time in milliseconds : 11
+23:51:40.476 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:40.923 [qtp1632413663-16] INFO  Pygmy - Query by Subject request received for topic: graduate school
+23:51:40.924 [qtp1632413663-16] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+23:51:41.452 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 1
+23:51:41.453 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:41.458 [qtp1632413663-13] INFO  Pygmy - Buy update request received for item: 1
+23:51:41.459 [qtp1632413663-13] INFO  Pygmy - Invalidating frontend cache
+23:51:41.465 [qtp1632413663-13] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:41.466 [qtp1632413663-13] INFO  Pygmy - Updating inventory of item 1
+23:51:41.470 [qtp1632413663-13] INFO  Pygmy - Syncing DB across all replica
+23:51:41.473 [qtp1632413663-13] INFO  Pygmy - Connection refused
+23:51:41.474 [qtp1632413663-13] INFO  Pygmy - Update response time in milliseconds : 14
+23:51:41.961 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 1
+23:51:41.962 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:41.967 [qtp1632413663-11] INFO  Pygmy - Buy update request received for item: 1
+23:51:41.968 [qtp1632413663-11] INFO  Pygmy - Invalidating frontend cache
+23:51:41.974 [qtp1632413663-11] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:41.976 [qtp1632413663-11] INFO  Pygmy - Updating inventory of item 1
+23:51:41.981 [qtp1632413663-11] INFO  Pygmy - Syncing DB across all replica
+23:51:41.984 [qtp1632413663-11] INFO  Pygmy - Connection refused
+23:51:41.985 [qtp1632413663-11] INFO  Pygmy - Update response time in milliseconds : 16
+23:51:42.484 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:43.536 [qtp1632413663-12] INFO  Pygmy - Query by Item request received for item: 2
+23:51:43.537 [qtp1632413663-12] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:43.541 [qtp1632413663-16] INFO  Pygmy - Buy update request received for item: 2
+23:51:43.542 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
+23:51:43.546 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:43.547 [qtp1632413663-16] INFO  Pygmy - Updating inventory of item 2
+23:51:43.561 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
+23:51:43.573 [qtp1632413663-16] INFO  Pygmy - Connection refused
+23:51:43.574 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 31
+23:51:44.045 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 3
+23:51:44.046 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:44.051 [qtp1632413663-12] INFO  Pygmy - Buy update request received for item: 3
+23:51:44.052 [qtp1632413663-12] INFO  Pygmy - Invalidating frontend cache
+23:51:44.056 [qtp1632413663-12] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:44.057 [qtp1632413663-12] INFO  Pygmy - Updating inventory of item 3
+23:51:44.094 [qtp1632413663-12] INFO  Pygmy - Syncing DB across all replica
+23:51:44.097 [qtp1632413663-12] INFO  Pygmy - Connection refused
+23:51:44.098 [qtp1632413663-12] INFO  Pygmy - Update response time in milliseconds : 45
+23:51:44.491 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:44.600 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 3
+23:51:44.601 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:45.627 [qtp1632413663-13] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+23:51:45.628 [qtp1632413663-13] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+23:51:46.144 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 4
+23:51:46.145 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:46.498 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:46.659 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 1
+23:51:46.659 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:48.504 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:50.516 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:51.768 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 3
+23:51:51.768 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:51.773 [qtp1632413663-16] INFO  Pygmy - Buy update request received for item: 3
+23:51:51.774 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
+23:51:51.778 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:51.779 [qtp1632413663-16] INFO  Pygmy - Updating inventory of item 3
+23:51:51.787 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
+23:51:51.790 [qtp1632413663-16] INFO  Pygmy - Connection refused
+23:51:51.791 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 17
+23:51:52.278 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 2
+23:51:52.279 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:52.522 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:52.821 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 2
+23:51:52.822 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:52.828 [qtp1632413663-16] INFO  Pygmy - Buy update request received for item: 2
+23:51:52.829 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
+23:51:52.834 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:52.835 [qtp1632413663-16] INFO  Pygmy - Updating inventory of item 2
+23:51:52.864 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
+23:51:52.867 [qtp1632413663-16] INFO  Pygmy - Connection refused
+23:51:52.869 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 39
+23:51:53.328 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 4
+23:51:53.329 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:53.338 [qtp1632413663-13] INFO  Pygmy - Buy update request received for item: 4
+23:51:53.338 [qtp1632413663-13] INFO  Pygmy - Invalidating frontend cache
+23:51:53.344 [qtp1632413663-13] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:53.345 [qtp1632413663-13] INFO  Pygmy - Updating inventory of item 4
+23:51:53.356 [qtp1632413663-13] INFO  Pygmy - Syncing DB across all replica
+23:51:53.359 [qtp1632413663-13] INFO  Pygmy - Connection refused
+23:51:53.360 [qtp1632413663-13] INFO  Pygmy - Update response time in milliseconds : 21
+23:51:54.391 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 4
+23:51:54.392 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:54.529 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:54.929 [qtp1632413663-11] INFO  Pygmy - Query by Subject request received for topic: graduate school
+23:51:54.931 [qtp1632413663-11] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+23:51:56.442 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 2
+23:51:56.443 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:56.534 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:56.986 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 3
+23:51:56.987 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:56.993 [qtp1632413663-11] INFO  Pygmy - Buy update request received for item: 3
+23:51:56.994 [qtp1632413663-11] INFO  Pygmy - Invalidating frontend cache
+23:51:57.001 [qtp1632413663-11] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:57.001 [qtp1632413663-11] INFO  Pygmy - Updating inventory of item 3
+23:51:57.042 [qtp1632413663-11] INFO  Pygmy - Syncing DB across all replica
+23:51:57.049 [qtp1632413663-11] INFO  Pygmy - Connection refused
+23:51:57.050 [qtp1632413663-11] INFO  Pygmy - Update response time in milliseconds : 55
+23:51:57.481 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 2
+23:51:57.482 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:57.490 [qtp1632413663-16] INFO  Pygmy - Buy update request received for item: 2
+23:51:57.492 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
+23:51:57.498 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:57.498 [qtp1632413663-16] INFO  Pygmy - Updating inventory of item 2
+23:51:57.515 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
+23:51:57.519 [qtp1632413663-16] INFO  Pygmy - Connection refused
+23:51:57.520 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 27
+23:51:58.098 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 1
+23:51:58.100 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:58.107 [qtp1632413663-13] INFO  Pygmy - Buy update request received for item: 1
+23:51:58.108 [qtp1632413663-13] INFO  Pygmy - Invalidating frontend cache
+23:51:58.113 [qtp1632413663-13] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:58.114 [qtp1632413663-13] INFO  Pygmy - Updating inventory of item 1
+23:51:58.118 [qtp1632413663-13] INFO  Pygmy - Syncing DB across all replica
+23:51:58.123 [qtp1632413663-13] INFO  Pygmy - Connection refused
+23:51:58.124 [qtp1632413663-13] INFO  Pygmy - Update response time in milliseconds : 15
+23:51:58.543 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:51:58.558 [qtp1632413663-16] INFO  Pygmy - Query by Subject request received for topic: distributed systems
+23:51:58.559 [qtp1632413663-16] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+23:51:59.161 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 1
+23:51:59.162 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:51:59.168 [qtp1632413663-16] INFO  Pygmy - Restock update request received for item: 1
+23:51:59.168 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
+23:51:59.173 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
+23:51:59.174 [qtp1632413663-16] INFO  Pygmy - Restocking book - 1
+23:51:59.203 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
+23:51:59.206 [qtp1632413663-16] INFO  Pygmy - Connection refused
+23:51:59.207 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 38
+23:52:00.550 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:00.609 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 2
+23:52:00.610 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:00.617 [qtp1632413663-11] INFO  Pygmy - Buy update request received for item: 2
+23:52:00.618 [qtp1632413663-11] INFO  Pygmy - Invalidating frontend cache
+23:52:00.623 [qtp1632413663-11] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:00.624 [qtp1632413663-11] INFO  Pygmy - Updating inventory of item 2
+23:52:00.629 [qtp1632413663-11] INFO  Pygmy - Syncing DB across all replica
+23:52:00.632 [qtp1632413663-11] INFO  Pygmy - Connection refused
+23:52:00.633 [qtp1632413663-11] INFO  Pygmy - Update response time in milliseconds : 14
+23:52:02.555 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:03.285 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 1
+23:52:03.286 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:03.290 [qtp1632413663-16] INFO  Pygmy - Buy update request received for item: 1
+23:52:03.290 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
+23:52:03.294 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:03.295 [qtp1632413663-16] INFO  Pygmy - Updating inventory of item 1
+23:52:03.306 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
+23:52:03.309 [qtp1632413663-16] INFO  Pygmy - Connection refused
+23:52:03.310 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 19
+23:52:03.689 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 4
+23:52:03.690 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:03.694 [qtp1632413663-13] INFO  Pygmy - Buy update request received for item: 4
+23:52:03.695 [qtp1632413663-13] INFO  Pygmy - Invalidating frontend cache
+23:52:03.705 [qtp1632413663-13] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:03.706 [qtp1632413663-13] INFO  Pygmy - Updating inventory of item 4
+23:52:03.711 [qtp1632413663-13] INFO  Pygmy - Syncing DB across all replica
+23:52:03.714 [qtp1632413663-13] INFO  Pygmy - Connection refused
+23:52:03.715 [qtp1632413663-13] INFO  Pygmy - Update response time in milliseconds : 20
+23:52:04.347 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 3
+23:52:04.347 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:04.354 [qtp1632413663-13] INFO  Pygmy - Buy update request received for item: 3
+23:52:04.355 [qtp1632413663-13] INFO  Pygmy - Invalidating frontend cache
+23:52:04.365 [qtp1632413663-13] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:04.366 [qtp1632413663-13] INFO  Pygmy - Updating inventory of item 3
+23:52:04.375 [qtp1632413663-13] INFO  Pygmy - Syncing DB across all replica
+23:52:04.379 [qtp1632413663-13] INFO  Pygmy - Connection refused
+23:52:04.380 [qtp1632413663-13] INFO  Pygmy - Update response time in milliseconds : 24
+23:52:04.571 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:04.740 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 4
+23:52:04.741 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:04.745 [qtp1632413663-13] INFO  Pygmy - Buy update request received for item: 4
+23:52:04.746 [qtp1632413663-13] INFO  Pygmy - Invalidating frontend cache
+23:52:04.751 [qtp1632413663-13] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:04.751 [qtp1632413663-13] INFO  Pygmy - Updating inventory of item 4
+23:52:04.754 [qtp1632413663-13] INFO  Pygmy - Syncing DB across all replica
+23:52:04.757 [qtp1632413663-13] INFO  Pygmy - Connection refused
+23:52:04.757 [qtp1632413663-13] INFO  Pygmy - Update response time in milliseconds : 11
+23:52:05.408 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 2
+23:52:05.409 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:05.414 [qtp1632413663-16] INFO  Pygmy - Restock update request received for item: 2
+23:52:05.414 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
+23:52:05.419 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:05.420 [qtp1632413663-16] INFO  Pygmy - Restocking book - 2
+23:52:05.425 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
+23:52:05.427 [qtp1632413663-16] INFO  Pygmy - Connection refused
+23:52:05.428 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 13
+23:52:05.787 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 3
+23:52:05.787 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:05.795 [qtp1632413663-11] INFO  Pygmy - Buy update request received for item: 3
+23:52:05.796 [qtp1632413663-11] INFO  Pygmy - Invalidating frontend cache
+23:52:05.803 [qtp1632413663-11] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:05.803 [qtp1632413663-11] INFO  Pygmy - Updating inventory of item 3
+23:52:05.808 [qtp1632413663-11] INFO  Pygmy - Syncing DB across all replica
+23:52:05.811 [qtp1632413663-11] INFO  Pygmy - Connection refused
+23:52:05.812 [qtp1632413663-11] INFO  Pygmy - Update response time in milliseconds : 15
+23:52:06.460 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 4
+23:52:06.461 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:06.577 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:06.847 [qtp1632413663-16] INFO  Pygmy - Query by Subject request received for topic: graduate school
+23:52:06.848 [qtp1632413663-16] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+23:52:08.582 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:08.901 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 3
+23:52:08.902 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:10.587 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:10.948 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 1
+23:52:10.949 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:10.955 [qtp1632413663-16] INFO  Pygmy - Buy update request received for item: 1
+23:52:10.955 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
+23:52:10.960 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:10.961 [qtp1632413663-16] INFO  Pygmy - Updating inventory of item 1
+23:52:10.966 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
+23:52:10.968 [qtp1632413663-16] INFO  Pygmy - Connection refused
+23:52:10.969 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 13
+23:52:12.003 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 2
+23:52:12.003 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:12.595 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:14.602 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:14.611 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 1
+23:52:14.612 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:15.641 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 3
+23:52:15.643 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:15.648 [qtp1632413663-13] INFO  Pygmy - Restock update request received for item: 3
+23:52:15.649 [qtp1632413663-13] INFO  Pygmy - Invalidating frontend cache
+23:52:15.656 [qtp1632413663-13] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:15.657 [qtp1632413663-13] INFO  Pygmy - Restocking book - 3
+23:52:15.740 [qtp1632413663-13] INFO  Pygmy - Syncing DB across all replica
+23:52:15.747 [qtp1632413663-13] INFO  Pygmy - Connection refused
+23:52:15.748 [qtp1632413663-13] INFO  Pygmy - Update response time in milliseconds : 99
+23:52:16.086 [qtp1632413663-11] INFO  Pygmy - Query by Subject request received for topic: graduate school
+23:52:16.087 [qtp1632413663-11] INFO  Pygmy - Query by Subject response time in milliseconds : 0
+23:52:16.609 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:18.618 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:18.804 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 1
+23:52:18.805 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:18.810 [qtp1632413663-13] INFO  Pygmy - Buy update request received for item: 1
+23:52:18.811 [qtp1632413663-13] INFO  Pygmy - Invalidating frontend cache
+23:52:18.816 [qtp1632413663-13] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:18.817 [qtp1632413663-13] INFO  Pygmy - Updating inventory of item 1
+23:52:18.826 [qtp1632413663-13] INFO  Pygmy - Syncing DB across all replica
+23:52:18.829 [qtp1632413663-13] INFO  Pygmy - Connection refused
+23:52:18.829 [qtp1632413663-13] INFO  Pygmy - Update response time in milliseconds : 18
+23:52:19.149 [qtp1632413663-11] INFO  Pygmy - Query by Item request received for item: 1
+23:52:19.150 [qtp1632413663-11] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:20.624 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:20.881 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 1
+23:52:20.882 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:20.887 [qtp1632413663-13] INFO  Pygmy - Buy update request received for item: 1
+23:52:20.888 [qtp1632413663-13] INFO  Pygmy - Invalidating frontend cache
+23:52:20.892 [qtp1632413663-13] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:20.893 [qtp1632413663-13] INFO  Pygmy - Updating inventory of item 1
+23:52:20.936 [qtp1632413663-13] INFO  Pygmy - Syncing DB across all replica
+23:52:20.992 [qtp1632413663-11] INFO  Pygmy - Re-Syncing DB request received
+23:52:21.133 [qtp1632413663-13] INFO  Pygmy - DB sync successful
+23:52:21.134 [qtp1632413663-13] INFO  Pygmy - Update response time in milliseconds : 245
+23:52:22.641 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:23.230 [qtp1632413663-16] INFO  Pygmy - Query by Item request received for item: 1
+23:52:23.232 [qtp1632413663-16] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:23.244 [qtp1632413663-12] INFO  Pygmy - Buy update request received for item: 1
+23:52:23.245 [qtp1632413663-12] INFO  Pygmy - Invalidating frontend cache
+23:52:23.253 [qtp1632413663-12] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:23.255 [qtp1632413663-12] INFO  Pygmy - Updating inventory of item 1
+23:52:23.260 [qtp1632413663-12] INFO  Pygmy - Syncing DB across all replica
+23:52:23.268 [qtp1632413663-12] INFO  Pygmy - DB sync successful
+23:52:23.269 [qtp1632413663-12] INFO  Pygmy - Update response time in milliseconds : 23
+23:52:24.659 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:25.383 [qtp1632413663-13] INFO  Pygmy - Query by Item request received for item: 1
+23:52:25.385 [qtp1632413663-13] INFO  Pygmy - Query by Item response time in milliseconds : 0
+23:52:25.394 [qtp1632413663-16] INFO  Pygmy - Restock update request received for item: 1
+23:52:25.395 [qtp1632413663-16] INFO  Pygmy - Invalidating frontend cache
+23:52:25.401 [qtp1632413663-16] INFO  Pygmy - Frontend cache invalidated successfully
+23:52:25.402 [qtp1632413663-16] INFO  Pygmy - Restocking book - 1
+23:52:25.406 [qtp1632413663-16] INFO  Pygmy - Syncing DB across all replica
+23:52:25.416 [qtp1632413663-16] INFO  Pygmy - DB sync successful
+23:52:25.417 [qtp1632413663-16] INFO  Pygmy - Update response time in milliseconds : 21
+23:52:26.683 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:28.691 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:30.710 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:32.799 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:34.818 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:36.840 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend
+23:52:36.847 [pool-1-thread-1] INFO  Pygmy - Connection refused
+23:52:38.848 [pool-1-thread-1] INFO  Pygmy - Sending heartbeat message to frontend

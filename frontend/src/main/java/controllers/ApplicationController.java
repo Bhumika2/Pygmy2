@@ -183,8 +183,8 @@ public class ApplicationController {
             if (Health.getCatalog1State().equals("RUNNING") && (catalogSwitch || Health.getCatalog2State().equals("FAILED"))) {
                 logger.info("Calling Catalog (replica 1) microservice");
                 catalogResponse = catalog.lookupBook(bookNumber, ninjaProperties.get("catalogHost"), ninjaProperties.get("catalogPort"));
-                logger.info("Catalog Replica 1 failed, Calling Catalog (replica 2) microservice");
                 if (catalogResponse == null) {
+                    logger.info("Catalog Replica 1 failed, Calling Catalog (replica 2) microservice");
                     catalogResponse = catalog.lookupBook(bookNumber, ninjaProperties.get("catalogReplicaHost"), ninjaProperties.get("catalogReplicaPort"));
                 }
             } else {
@@ -259,7 +259,7 @@ public class ApplicationController {
                 orderResponse = order.buyBook(orderRequest, ninjaProperties.get("orderReplicaHost"), ninjaProperties.get("orderReplicaPort"));
             }
         } else {
-            logger.info("Calling Order (replica 1) microservice");
+            logger.info("Calling Order (replica 2) microservice");
             orderResponse = order.buyBook(orderRequest, ninjaProperties.get("orderReplicaHost"), ninjaProperties.get("orderReplicaPort"));
             if (orderResponse == null) {
                 logger.info("Order replica 2 failed, Calling Order (replica 1) microservice");

@@ -1,280 +1,280 @@
 
 
-[SEARCH] Requesting topic details: graduate school
-[SEARCH] Response time in milliseconds : 737
-[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":0},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":5}]
+[SEARCH] Requesting topic details: distributed systems
+[SEARCH] Response time in milliseconds : 920
+[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":0},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5},{"bookNumber":5,"bookName":"How to finish Project 3 on time","topic":"distributed systems","cost":100,"count":5}]
 
 
 [LOOKUP] Requesting details of book: 3
-[LOOKUP] Response time in milliseconds : 100
+[LOOKUP] Response time in milliseconds : 47
 [LOOKUP] Response: {"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":0}
 
 
-[BUY] Buy Request for book: 1
-[BUY] Response time in milliseconds : 92
-[BUY] Response: {"bookNumber":1,"message":"Successfully bought book - How to get a good grade in 677 in 20 minutes a day"}
-
-
-[SEARCH] Requesting topic details: graduate school
-[SEARCH] Response time in milliseconds : 53
-[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":5},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":5}]
-
-
-[LOOKUP] Requesting details of book: 4
-[LOOKUP] Response time in milliseconds : 55
-[LOOKUP] Response: {"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":5}
-
-
-[LOOKUP] Requesting details of book: 3
-[LOOKUP] Response time in milliseconds : 50
-[LOOKUP] Response: {"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":5}
-
-
-[SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 70
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":3},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5}]
-
-
-[LOOKUP] Requesting details of book: 1
-[LOOKUP] Response time in milliseconds : 25
-[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":3}
-
-
-[LOOKUP] Requesting details of book: 1
-[LOOKUP] Response time in milliseconds : 24
-[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":3}
-
-
 [BUY] Buy Request for book: 4
-[BUY] Response time in milliseconds : 92
+[BUY] Response time in milliseconds : 345
 [BUY] Response: {"bookNumber":4,"message":"Successfully bought book - Cooking for the Impatient Graduate Student"}
 
 
-[BUY] Buy Request for book: 4
-[BUY] Response time in milliseconds : 99
-[BUY] Response: {"bookNumber":4,"message":"Successfully bought book - Cooking for the Impatient Graduate Student"}
+[LOOKUP] Requesting details of book: 2
+[LOOKUP] Response time in milliseconds : 58
+[LOOKUP] Response: {"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":3}
 
 
 [SEARCH] Requesting topic details: graduate school
-[SEARCH] Response time in milliseconds : 22
-[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":4},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":4}]
+[SEARCH] Response time in milliseconds : 39
+[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":0},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":3},{"bookNumber":6,"bookName":"Why theory classes are so hard","topic":"graduate school","cost":70,"count":5},{"bookNumber":7,"bookName":"Spring in the Pioneer Valley","topic":"graduate school","cost":30,"count":5}]
 
 
 [SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 28
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":3},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5}]
+[SEARCH] Response time in milliseconds : 17
+[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":0},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5},{"bookNumber":5,"bookName":"How to finish Project 3 on time","topic":"distributed systems","cost":100,"count":5}]
 
 
 [LOOKUP] Requesting details of book: 1
-[LOOKUP] Response time in milliseconds : 25
-[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":3}
+[LOOKUP] Response time in milliseconds : 44
+[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":0}
 
 
-[SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 20
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":3},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5}]
-
-
-[SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 46
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":2},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5}]
-
-
-[SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 31
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":2},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5}]
+[LOOKUP] Requesting details of book: 1
+[LOOKUP] Response time in milliseconds : 33
+[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":0}
 
 
 [LOOKUP] Requesting details of book: 2
-[LOOKUP] Response time in milliseconds : 53
-[LOOKUP] Response: {"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5}
-
-
-[SEARCH] Requesting topic details: graduate school
-[SEARCH] Response time in milliseconds : 29
-[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":4},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":4}]
+[LOOKUP] Response time in milliseconds : 8
+[LOOKUP] Response: {"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":3}
 
 
 [SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 33
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":2},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5}]
-
-
-[SEARCH] Requesting topic details: graduate school
-[SEARCH] Response time in milliseconds : 30
-[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":4},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":4}]
-
-
-[LOOKUP] Requesting details of book: 3
-[LOOKUP] Response time in milliseconds : 53
-[LOOKUP] Response: {"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":4}
-
-
-[LOOKUP] Requesting details of book: 1
-[LOOKUP] Response time in milliseconds : 28
-[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":2}
-
-
-[LOOKUP] Requesting details of book: 3
-[LOOKUP] Response time in milliseconds : 24
-[LOOKUP] Response: {"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":4}
-
-
-[LOOKUP] Requesting details of book: 2
-[LOOKUP] Response time in milliseconds : 32
-[LOOKUP] Response: {"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5}
-
-
-[SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 10
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":2},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5}]
-
-
-[SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 14
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":2},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5}]
-
-
-[LOOKUP] Requesting details of book: 4
-[LOOKUP] Response time in milliseconds : 45
-[LOOKUP] Response: {"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":1}
-
-
-[LOOKUP] Requesting details of book: 1
-[LOOKUP] Response time in milliseconds : 16
-[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":2}
-
-
-[SEARCH] Requesting topic details: graduate school
-[SEARCH] Response time in milliseconds : 43
-[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":3},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":1}]
-
-
-[SEARCH] Requesting topic details: graduate school
-[SEARCH] Response time in milliseconds : 19
-[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":3},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":1}]
-
-
-[SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 55
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":2},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":4}]
-
-
-[SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 34
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":2},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":4}]
-
-
-[LOOKUP] Requesting details of book: 4
-[LOOKUP] Response time in milliseconds : 52
-[LOOKUP] Response: {"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":0}
-
-
-[SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 23
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":2},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":4}]
-
-
-[LOOKUP] Requesting details of book: 1
-[LOOKUP] Response time in milliseconds : 16
-[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":2}
-
-
-[BUY] Buy Request for book: 1
-[BUY] Response time in milliseconds : 106
-[BUY] Response: {"bookNumber":1,"message":"Successfully bought book - How to get a good grade in 677 in 20 minutes a day"}
-
-
-[LOOKUP] Requesting details of book: 4
-[LOOKUP] Response time in milliseconds : 35
-[LOOKUP] Response: {"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":0}
-
-
-[LOOKUP] Requesting details of book: 4
-[LOOKUP] Response time in milliseconds : 31
-[LOOKUP] Response: {"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":0}
-
-
-[LOOKUP] Requesting details of book: 2
-[LOOKUP] Response time in milliseconds : 21
-[LOOKUP] Response: {"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":4}
-
-
-[SEARCH] Requesting topic details: graduate school
-[SEARCH] Response time in milliseconds : 20
-[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":3},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":0}]
+[SEARCH] Response time in milliseconds : 36
+[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":5},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":4},{"bookNumber":5,"bookName":"How to finish Project 3 on time","topic":"distributed systems","cost":100,"count":5}]
 
 
 [LOOKUP] Requesting details of book: 2
 [LOOKUP] Response time in milliseconds : 10
-[LOOKUP] Response: {"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":4}
-
-
-[SEARCH] Requesting topic details: graduate school
-[SEARCH] Response time in milliseconds : 52
-[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":3},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":5}]
-
-
-[LOOKUP] Requesting details of book: 2
-[LOOKUP] Response time in milliseconds : 27
-[LOOKUP] Response: {"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":4}
-
-
-[LOOKUP] Requesting details of book: 3
-[LOOKUP] Response time in milliseconds : 30
-[LOOKUP] Response: {"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":3}
-
-
-[LOOKUP] Requesting details of book: 1
-[LOOKUP] Response time in milliseconds : 41
-[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":4}
+[LOOKUP] Response: {"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":3}
 
 
 [BUY] Buy Request for book: 1
-[BUY] Response time in milliseconds : 102
+[BUY] Response time in milliseconds : 15494
 [BUY] Response: {"bookNumber":1,"message":"Successfully bought book - How to get a good grade in 677 in 20 minutes a day"}
 
 
 [BUY] Buy Request for book: 4
-[BUY] Response time in milliseconds : 97
+[BUY] Response time in milliseconds : 54
 [BUY] Response: {"bookNumber":4,"message":"Successfully bought book - Cooking for the Impatient Graduate Student"}
 
 
 [BUY] Buy Request for book: 1
-[BUY] Response time in milliseconds : 111
+[BUY] Response time in milliseconds : 59
 [BUY] Response: {"bookNumber":1,"message":"Successfully bought book - How to get a good grade in 677 in 20 minutes a day"}
 
 
 [SEARCH] Requesting topic details: distributed systems
-[SEARCH] Response time in milliseconds : 38
-[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":3},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":4}]
+[SEARCH] Response time in milliseconds : 10
+[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":5},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":4},{"bookNumber":5,"bookName":"How to finish Project 3 on time","topic":"distributed systems","cost":100,"count":5}]
 
 
-[LOOKUP] Requesting details of book: 2
-[LOOKUP] Response time in milliseconds : 26
-[LOOKUP] Response: {"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":4}
+[BUY] Buy Request for book: 2
+[BUY] Response time in milliseconds : 74
+[BUY] Response: {"bookNumber":2,"message":"Successfully bought book - RPCs for Dummies"}
+
+
+[LOOKUP] Requesting details of book: 3
+[LOOKUP] Response time in milliseconds : 16
+[LOOKUP] Response: {"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":4}
+
+
+[SEARCH] Requesting topic details: distributed systems
+[SEARCH] Response time in milliseconds : 22
+[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":1},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":3},{"bookNumber":5,"bookName":"How to finish Project 3 on time","topic":"distributed systems","cost":100,"count":5}]
+
+
+[LOOKUP] Requesting details of book: 1
+[LOOKUP] Response time in milliseconds : 22
+[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":1}
+
+
+[SEARCH] Requesting topic details: distributed systems
+[SEARCH] Response time in milliseconds : 14
+[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":1},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":3},{"bookNumber":5,"bookName":"How to finish Project 3 on time","topic":"distributed systems","cost":100,"count":5}]
+
+
+[SEARCH] Requesting topic details: graduate school
+[SEARCH] Response time in milliseconds : 20
+[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":5},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":3},{"bookNumber":6,"bookName":"Why theory classes are so hard","topic":"graduate school","cost":70,"count":5},{"bookNumber":7,"bookName":"Spring in the Pioneer Valley","topic":"graduate school","cost":30,"count":5}]
+
+
+[LOOKUP] Requesting details of book: 4
+[LOOKUP] Response time in milliseconds : 12
+[LOOKUP] Response: {"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":3}
+
+
+[SEARCH] Requesting topic details: graduate school
+[SEARCH] Response time in milliseconds : 12
+[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":5},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":3},{"bookNumber":6,"bookName":"Why theory classes are so hard","topic":"graduate school","cost":70,"count":5},{"bookNumber":7,"bookName":"Spring in the Pioneer Valley","topic":"graduate school","cost":30,"count":5}]
+
+
+[BUY] Buy Request for book: 3
+[BUY] Response time in milliseconds : 49
+[BUY] Response: {"bookNumber":3,"message":"Successfully bought book - Xen and the Art of Surviving Graduate School"}
+
+
+[BUY] Buy Request for book: 2
+[BUY] Response time in milliseconds : 80
+[BUY] Response: {"bookNumber":2,"message":"Successfully bought book - RPCs for Dummies"}
+
+
+[LOOKUP] Requesting details of book: 1
+[LOOKUP] Response time in milliseconds : 11
+[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":1}
+
+
+[SEARCH] Requesting topic details: graduate school
+[SEARCH] Response time in milliseconds : 31
+[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":3},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":2},{"bookNumber":6,"bookName":"Why theory classes are so hard","topic":"graduate school","cost":70,"count":5},{"bookNumber":7,"bookName":"Spring in the Pioneer Valley","topic":"graduate school","cost":30,"count":5}]
+
+
+[LOOKUP] Requesting details of book: 4
+[LOOKUP] Response time in milliseconds : 13
+[LOOKUP] Response: {"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":2}
+
+
+[BUY] Buy Request for book: 3
+[BUY] Response time in milliseconds : 95
+[BUY] Response: {"bookNumber":3,"message":"Successfully bought book - Xen and the Art of Surviving Graduate School"}
 
 
 [BUY] Buy Request for book: 1
-[BUY] Response time in milliseconds : 112
+[BUY] Response time in milliseconds : 63
 [BUY] Response: {"bookNumber":1,"message":"Successfully bought book - How to get a good grade in 677 in 20 minutes a day"}
 
 
-[BUY] Buy Request for book: 4
-[BUY] Response time in milliseconds : 83
-[BUY] Response: {"bookNumber":4,"message":"Successfully bought book - Cooking for the Impatient Graduate Student"}
+[BUY] Buy Request for book: 1
+[BUY] Response time in milliseconds : 75
+[BUY] Response: {"bookNumber":1,"message":"Insufficient quantity of book - How to get a good grade in 677 in 20 minutes a day"}
 
 
 [SEARCH] Requesting topic details: graduate school
-[SEARCH] Response time in milliseconds : 10
-[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":3},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":5}]
+[SEARCH] Response time in milliseconds : 8
+[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":3},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":2},{"bookNumber":6,"bookName":"Why theory classes are so hard","topic":"graduate school","cost":70,"count":5},{"bookNumber":7,"bookName":"Spring in the Pioneer Valley","topic":"graduate school","cost":30,"count":5}]
+
+
+[LOOKUP] Requesting details of book: 4
+[LOOKUP] Response time in milliseconds : 11
+[LOOKUP] Response: {"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":2}
+
+
+[SEARCH] Requesting topic details: distributed systems
+[SEARCH] Response time in milliseconds : 12
+[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":0},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":1},{"bookNumber":5,"bookName":"How to finish Project 3 on time","topic":"distributed systems","cost":100,"count":5}]
+
+
+[BUY] Buy Request for book: 1
+[BUY] Response time in milliseconds : 50
+[BUY] Response: {"bookNumber":1,"message":"Successfully bought book - How to get a good grade in 677 in 20 minutes a day"}
+
+
+[BUY] Buy Request for book: 3
+[BUY] Response time in milliseconds : 61
+[BUY] Response: {"bookNumber":3,"message":"Successfully bought book - Xen and the Art of Surviving Graduate School"}
+
+
+[BUY] Buy Request for book: 2
+[BUY] Response time in milliseconds : 49
+[BUY] Response: {"bookNumber":2,"message":"Insufficient quantity of book - RPCs for Dummies"}
+
+
+[LOOKUP] Requesting details of book: 4
+[LOOKUP] Response time in milliseconds : 25
+[LOOKUP] Response: {"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":0}
 
 
 [SEARCH] Requesting topic details: graduate school
-[SEARCH] Response time in milliseconds : 28
-[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":3},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":5}]
+[SEARCH] Response time in milliseconds : 14
+[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":0},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":0},{"bookNumber":6,"bookName":"Why theory classes are so hard","topic":"graduate school","cost":70,"count":5},{"bookNumber":7,"bookName":"Spring in the Pioneer Valley","topic":"graduate school","cost":30,"count":5}]
 
 
-[BUY] Buy Request for book: 4
-[BUY] Response time in milliseconds : 92
-[BUY] Response: {"bookNumber":4,"message":"Successfully bought book - Cooking for the Impatient Graduate Student"}
+[SEARCH] Requesting topic details: distributed systems
+[SEARCH] Response time in milliseconds : 9
+[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":0},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":1},{"bookNumber":5,"bookName":"How to finish Project 3 on time","topic":"distributed systems","cost":100,"count":5}]
+
+
+[LOOKUP] Requesting details of book: 4
+[LOOKUP] Response time in milliseconds : 10
+[LOOKUP] Response: {"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":0}
+
+
+[SEARCH] Requesting topic details: graduate school
+[SEARCH] Response time in milliseconds : 11
+[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":0},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":0},{"bookNumber":6,"bookName":"Why theory classes are so hard","topic":"graduate school","cost":70,"count":5},{"bookNumber":7,"bookName":"Spring in the Pioneer Valley","topic":"graduate school","cost":30,"count":5}]
+
+
+[SEARCH] Requesting topic details: distributed systems
+[SEARCH] Response time in milliseconds : 13
+[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":0},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":1},{"bookNumber":5,"bookName":"How to finish Project 3 on time","topic":"distributed systems","cost":100,"count":5}]
+
+
+[SEARCH] Requesting topic details: graduate school
+[SEARCH] Response time in milliseconds : 12
+[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":0},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":0},{"bookNumber":6,"bookName":"Why theory classes are so hard","topic":"graduate school","cost":70,"count":5},{"bookNumber":7,"bookName":"Spring in the Pioneer Valley","topic":"graduate school","cost":30,"count":5}]
+
+
+[LOOKUP] Requesting details of book: 3
+[LOOKUP] Response time in milliseconds : 10
+[LOOKUP] Response: {"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":0}
+
+
+[LOOKUP] Requesting details of book: 1
+[LOOKUP] Response time in milliseconds : 18
+[LOOKUP] Response: {"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":3}
+
+
+[BUY] Buy Request for book: 3
+[BUY] Response time in milliseconds : 132
+[BUY] Response: {"bookNumber":3,"message":"Insufficient quantity of book - Xen and the Art of Surviving Graduate School"}
+
+
+[SEARCH] Requesting topic details: distributed systems
+[SEARCH] Response time in milliseconds : 8
+[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":0},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":1},{"bookNumber":5,"bookName":"How to finish Project 3 on time","topic":"distributed systems","cost":100,"count":5}]
+
+
+[SEARCH] Requesting topic details: distributed systems
+[SEARCH] Response time in milliseconds : 9
+[SEARCH] Response: [{"bookNumber":1,"bookName":"How to get a good grade in 677 in 20 minutes a day","topic":"distributed systems","cost":25,"count":0},{"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":1},{"bookNumber":5,"bookName":"How to finish Project 3 on time","topic":"distributed systems","cost":100,"count":5}]
+
+
+[BUY] Buy Request for book: 1
+[BUY] Response time in milliseconds : 46
+[BUY] Response: {"bookNumber":1,"message":"Successfully bought book - How to get a good grade in 677 in 20 minutes a day"}
+
+
+[LOOKUP] Requesting details of book: 2
+[LOOKUP] Response time in milliseconds : 9
+[LOOKUP] Response: {"bookNumber":2,"bookName":"RPCs for Dummies","topic":"distributed systems","cost":50,"count":5}
+
+
+[BUY] Buy Request for book: 1
+[BUY] Response time in milliseconds : 283
+[BUY] Response: {"bookNumber":1,"message":"Successfully bought book - How to get a good grade in 677 in 20 minutes a day"}
+
+
+[SEARCH] Requesting topic details: graduate school
+[SEARCH] Response time in milliseconds : 25
+[SEARCH] Response: [{"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":5},{"bookNumber":4,"bookName":"Cooking for the Impatient Graduate Student","topic":"graduate school","cost":60,"count":0},{"bookNumber":6,"bookName":"Why theory classes are so hard","topic":"graduate school","cost":70,"count":5},{"bookNumber":7,"bookName":"Spring in the Pioneer Valley","topic":"graduate school","cost":30,"count":5}]
+
+
+[BUY] Buy Request for book: 1
+[BUY] Response time in milliseconds : 87
+[BUY] Response: {"bookNumber":1,"message":"Successfully bought book - How to get a good grade in 677 in 20 minutes a day"}
+
+
+[LOOKUP] Requesting details of book: 3
+[LOOKUP] Response time in milliseconds : 44
+[LOOKUP] Response: {"bookNumber":3,"bookName":"Xen and the Art of Surviving Graduate School","topic":"graduate school","cost":40,"count":5}
+
+
+[BUY] Buy Request for book: 1
+[BUY] Response time in milliseconds : 93
+[BUY] Response: {"bookNumber":1,"message":"Insufficient quantity of book - How to get a good grade in 677 in 20 minutes a day"}
